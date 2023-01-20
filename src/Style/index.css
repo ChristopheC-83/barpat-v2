@@ -60,7 +60,6 @@ a {
   gap: 0 2vw;
   background-color: #f1f1f1;
   margin: 0 auto;
-  border: 1px solid black;
 }
 .dropsContainer .drop {
   position: relative;
