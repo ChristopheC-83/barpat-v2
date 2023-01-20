@@ -21,7 +21,7 @@ export default function Drops() {
     },
     {
       id: 3,
-      br: "60% 40% 52% 48% / 68% 76% 24% 32% ",
+      br: "51% 49% 25% 75% / 33% 33% 67% 67%   ",
       color: "rgb(158, 235, 15)",
       lettre: "R",
       text1: "Rien",
@@ -55,8 +55,7 @@ export default function Drops() {
   console.log(dropList[0].br);
 
   return (
-    <div className="container">
-      <div className="content">
+    <div className="dropsContainer">
       {dropList.map((drop) => (
         <Drop
           radius={drop.br}
@@ -67,7 +66,6 @@ export default function Drops() {
           text2={drop.text2}
         />
       ))}
-      </div>
     </div>
   );
 }

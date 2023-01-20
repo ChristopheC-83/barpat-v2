@@ -16,13 +16,19 @@ export default function Goutte(props) {
       className="drop"
       style={{
         borderRadius: hovering ? "50%" : props.radius,
-        transition: "border-radius 0.75s ease-in-out",
+        transform: hovering ? "scale(1.1)" : "scale(1)",
+        transition: "all 0.75s ease-in-out",
       }}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
-      <h2 style={{ background: props.color }}>{props.lettre}</h2>
+      <h2 
+      className="dropLettre"
+      style={{ background: props.color }}>
+        {props.lettre}
+        </h2>
       <p
+      className="dropTexte"
         style={{
           color: props.color,
           transform: hovering ? "scale(0)" : "scale(1)",
@@ -32,6 +38,7 @@ export default function Goutte(props) {
         {props.text1}
       </p>
       <p
+      className="dropTexte"
         style={{
           color: props.color,
           transform: hovering ? "scale(1)" : "scale(0)",
