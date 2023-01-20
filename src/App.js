@@ -1,11 +1,11 @@
 import "./Style/index.css";
 import {BrowserRouter, Router, Routes} from "react-router-dom"
-import Drops from "./component/Drops";
+import Accueil from "./Pages/Accueil";
 
 function App() {
   return (
     <div className="App">
-      <Drops />
+      <Accueil/>
     </div>
   );
 }

@@ -52,7 +52,6 @@ export default function Drops() {
       text2: "Team Spirit",
     },
   ];
-  console.log(dropList[0].br);
 
   return (
     <div className="dropsContainer">
