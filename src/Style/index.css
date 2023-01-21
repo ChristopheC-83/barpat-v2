@@ -49,6 +49,12 @@ a {
   color: black;
 }
 
+.cvContainer {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 320px;
+}
+
 .dropsContainer {
   width: 100%;
   max-width: 1920px;
@@ -156,8 +162,71 @@ a {
     font-size: clamp(12px, 3.2vw, 25px);
   }
 }
+.informatiqueContainer {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 320px;
+}
+
+.navbarContainer {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  border: 1px solid black;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  margin-right: 10px;
+}
+.navbarContainer .infoPerso {
+  width: 100%;
+  height: 25%;
+  background-color: #ccc;
+  color: violet;
+}
+.navbarContainer .navigation {
+  width: 100%;
+  height: 50%;
+  background-color: #999;
+}
+.navbarContainer .navigation a {
+  color: white;
+}
+.navbarContainer .socialNetwork {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(240, 237, 237);
+}
+.navbarContainer .signature {
+  width: 100%;
+  height: 10%;
+  background-color: #999;
+}
+
+.parcoursContainer {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 320px;
+}
+
+.partageContainer {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 320px;
+}
+
+.portfolioContainer {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 320px;
+}
+
 .App {
   width: 100%;
   min-height: 100vh;
   background-color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
 }/*# sourceMappingURL=index.css.map */

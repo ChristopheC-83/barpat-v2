@@ -1,4 +1,46 @@
-.navbarContainer{
+.navbarContainer {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  border: 1px solid black;
+
+  background-color: rgb(34, 33, 33);
+  color:white;
+  margin-right: 10px;
+
+  .infoPerso{
+    width: 100%;
+    height: 25%;
+    background-color: #ccc;
+  
+    color:violet;
+  }
+
+
+.navigation{
+  width: 100%;
+  height: 50%;
+  background-color: #999;
+  a{
+    color:white;
+
+  }
+
+}
+
+.socialNetwork{
+width: 100%;
+height: 15%;
+background-color: rgb(240, 237, 237);
+}
+
+.signature{
+  width: 100%;
+  height: 10%;
+  background-color: #999;
+}
+
+
 
 
 
@@ -13,5 +55,4 @@
 
 }
 
-
-@import "./navbar_MQ"
+@import "./navbar_MQ";
