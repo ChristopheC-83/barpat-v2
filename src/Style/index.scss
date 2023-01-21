@@ -1,8 +1,15 @@
 @import "./libs/reset";
 @import "./libs/variables";
 @import "./libs/mixins";
+@import "./sous-fichiers/accueil";
+@import "./sous-fichiers/cv";
 @import "./sous-fichiers/goutte";
-// @import "./sous-fichiers/goutte_MQ";
+@import "./sous-fichiers/informatique";
+@import "./sous-fichiers/navbar";
+@import "./sous-fichiers/parcours";
+@import "./sous-fichiers/partages";
+@import "./sous-fichiers/portfolio";
+@import "./sous-fichiers/notFound";
 
 
 .App{

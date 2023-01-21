@@ -52,14 +52,15 @@ a {
 .dropsContainer {
   width: 100%;
   max-width: 1920px;
-  height: 13vw;
-  max-height: 250px;
+  height: 15vw;
+  max-height: 290px;
   display: flex;
   padding: 0 6vw;
   align-items: center;
   gap: 0 2vw;
   background-color: #f1f1f1;
   margin: 0 auto;
+  border: 1px solid black;
 }
 .dropsContainer .drop {
   position: relative;
