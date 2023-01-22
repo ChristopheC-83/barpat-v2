@@ -28,9 +28,6 @@ export default function SocialNetwork({ color }) {
     },
   ];
 
-  console.log({ color });
-  const couleur = { color };
-  console.log("couleur:", couleur.color);
 
   return (
     <div className="socialNetwork">
