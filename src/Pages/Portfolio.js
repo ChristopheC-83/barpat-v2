@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <div className="container">
       <Navbar/>
-    <div className='portfolioContainer'>Portfolio</div>
+    <div className='pageContainer portfolioContainer'>Portfolio</div>
     </div>
   )
 }

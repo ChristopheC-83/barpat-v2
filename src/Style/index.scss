@@ -15,12 +15,58 @@
 .App{
     width: 100%;
     min-height: 100vh;
-    background-color: #f1f1f1;
+    background-color: $blanc1;
+
 }
 
 .container{
     display: flex;
-    padding: 10px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    border: 1px solid violet;
+    margin: 0 auto;
+    background-color:$noir1;
+    position: relative;
+    
     
 }
+
+.halo{
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: bgc 180s infinite ease-in-out;
+}
+
+@keyframes bgc {
+    50%{
+        width: 60vw;
+        height: 60vw;
+        top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    100%{
+        width: 2vw;
+        height: 2vw;
+    }
+    
+}
+
+.pageContainer{
+
+    width: 100%;
+    min-height: 98vh;
+    margin: 1vh 10px;
+    margin-left: 320px;
+    
+    @include glassMorphBlack;
+
+
+
+} 
 

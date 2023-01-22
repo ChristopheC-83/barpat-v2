@@ -5,6 +5,6 @@ export default function Parcours() {
   return (
     <div className="container">
       <Navbar/>
-    <div className='parcoursContainer'>Parcours</div></div>
+    <div className='pageContainer parcoursContainer'>Parcours</div></div>
   )
 }

@@ -5,7 +5,7 @@ export default function Partages() {
   return (
     <div className="container">
       <Navbar/>
-    <div className='partageContainer'>
+    <div className='pageContainer partageContainer'>
       partages
     </div></div>
   )

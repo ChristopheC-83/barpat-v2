@@ -6,6 +6,7 @@ import Informatique from "./Pages/Informatique";
 import Partages from "./Pages/Partages";
 import Parcours from "./Pages/Parcours";
 import Portfolio from "./Pages/Portfolio";
+import Sport from "./Pages/Sport";
 import NotFound from "./Pages/NotFound";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/cv" element={<CV />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/partages" element={<Partages />} />
           <Route path="/parcours" element={<Parcours />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/sport" element={<Sport />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
     </>
