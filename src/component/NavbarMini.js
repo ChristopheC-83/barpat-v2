@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function NavbarMini() {
+export default function NavbarMini({ color }) {
+
+  
   return (
-    <div>
-      NavbarMini
+    <div className='navbarMiniContainer'>
+      NavbarMini 
+      {color}
     </div>
   )
 }

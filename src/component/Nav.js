@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import NavbarMini from "./NavbarMini";
 
-export default function Nav() {
-
+export default function Nav({ color }) {
+  
 
   const [largeur, setLargeur] = useState(window.innerWidth);
 
@@ -21,11 +21,8 @@ export default function Nav() {
   }, []);
 
   return (
-  
-  <div>
-
-    {window.innerWidth>1024 ? <Navbar/> : <NavbarMini/>}
-
-
-  </div>);
+    <div>
+      {largeur > 1024 ? <Navbar color={color} /> : <NavbarMini color={color} />}
+    </div>
+  );
 }

@@ -190,21 +190,34 @@ a {
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
   width: 100%;
   height: 30%;
-  color: violet;
+}
+.navbarContainer .infoPerso img {
+  display: block;
+  width: clamp(140px, 60px + 10vh, 180px);
+  height: clamp(140px, 60px + 10vh, 180px);
+  border-radius: 999px;
+  margin: 1.5vh auto;
+  margin-bottom: calc(7vh - 50px);
+}
+.navbarContainer .infoPerso h2 {
+  text-align: center;
+  font-size: clamp(20px, 10px + 1vh, 30px);
+  margin: 1.25vh;
+  text-shadow: 0.5px 0.5px 1px #f1f1f1;
 }
 .navbarContainer .navigation {
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
@@ -218,8 +231,8 @@ a {
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
@@ -231,14 +244,18 @@ a {
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
   width: 100%;
   height: 5%;
   color: violet;
+}
+
+.navbarMiniContainer {
+  position: absolute;
 }
 
 .parcoursContainer {
@@ -259,10 +276,13 @@ a {
   margin-left: 320px;
 }
 
+body {
+  background-color: #333;
+}
+
 .App {
   width: 100%;
   min-height: 100vh;
-  background-color: #f1f1f1;
 }
 
 .container {
@@ -270,9 +290,8 @@ a {
   width: 100%;
   max-width: 1920px;
   height: 100%;
-  border: 1px solid violet;
   margin: 0 auto;
-  background-color: #111;
+  background-color: #333;
   position: relative;
 }
 
@@ -319,14 +338,20 @@ a {
 .pageContainer {
   width: 100%;
   min-height: 98vh;
-  margin: 1vh 10px;
+  margin: 1vh;
   margin-left: 320px;
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+}
+
+@media (max-width: 1024px) {
+  .pageContainer {
+    margin-left: 1vh;
+  }
 }/*# sourceMappingURL=index.css.map */

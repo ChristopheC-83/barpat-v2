@@ -10,11 +10,9 @@ import Sport from "./Pages/Sport";
 import NotFound from "./Pages/NotFound";
 
 function App() {
-
-
   return (
     <>
-    
+     
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/cv" element={<CV />} />

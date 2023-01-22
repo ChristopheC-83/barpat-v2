@@ -1,14 +1,12 @@
-import React from "react";
+import { useContext } from "react";
+import { dataColorContext } from "../component/Context/ColorContext";
 import Nav from "../component/Nav";
 import "../Style/index.scss";
-import { dataColor } from "../data/dataColor";
 
-export default function CV() {
-  console.log(dataColor);
-  console.log(dataColor[0]);
-  console.log(dataColor[0].color);
+export default function CV(props) {
+  const { getColorByName } = useContext(dataColorContext);
 
-  let color = dataColor[0].color;
+  let color = getColorByName("cv");
 
   return (
     <div className="container">
@@ -20,9 +18,8 @@ export default function CV() {
         }}
       ></div>
       <div className="centre"></div>
-      <Nav />
-      <div className="pageContainer cvContainer">
-        CV</div>
+      <Nav color={color}/>
+      <div className="pageContainer cvContainer">CV</div>
     </div>
   );
 }
