@@ -7,6 +7,7 @@ import Partages from "./Pages/Partages";
 import Parcours from "./Pages/Parcours";
 import Portfolio from "./Pages/Portfolio";
 import Sport from "./Pages/Sport";
+import Mentions from "./component/Mentions";
 import NotFound from "./Pages/NotFound";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/parcours" element={<Parcours />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/sport" element={<Sport />} />
+          <Route path="/mentions" element={<Mentions />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
     </>

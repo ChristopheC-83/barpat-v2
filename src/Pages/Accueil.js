@@ -26,6 +26,9 @@ export default function Accueil() {
             <NavLink to="/portfolio">
               <p>Portfolio</p>
             </NavLink>
+            <NavLink to="/sport">
+              <p>Sport</p>
+            </NavLink>
           </li>
         </ul>
 

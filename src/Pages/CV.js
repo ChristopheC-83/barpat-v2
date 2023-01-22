@@ -18,7 +18,7 @@ export default function CV(props) {
         }}
       ></div>
       <div className="centre"></div>
-      <Nav color={color}/>
+      <Nav color={color} />
       <div className="pageContainer cvContainer">CV</div>
     </div>
   );

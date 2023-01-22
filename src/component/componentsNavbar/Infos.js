@@ -1,12 +1,9 @@
 import React from "react";
 import photoProfil from "../../images/navbar/photoCV.png";
-import { dataColor } from "../../data/dataColor";
 
-export default function Infos() {
+export default function Infos({color}) {
 
-  //  on gere les couleur par un context ! pas propsDrilling !
-  let color = dataColor[2].color;
-  // console.log(color);
+ 
 
   return (
     <div className="infoPerso">
@@ -16,8 +13,8 @@ export default function Infos() {
         style={{ border: `10px solid ${color}` }}
       />
 
-      <h2 >Christophe</h2>
-      <h2>CHIAPPETTA</h2>
+      <h2 style={{borderBottom:`2px solid ${color}`}}>Christophe</h2>
+      <h2 style={{borderBottom:`2px solid ${color}`}}>CHIAPPETTA</h2>
     </div>
   );
 }

@@ -1,10 +1,22 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
+import Nav from '../component/Navbar'
+import { useContext } from "react";
+import { dataColorContext } from "../component/Context/ColorContext";
 
 export default function Portfolio() {
+  const { getColorByName } = useContext(dataColorContext);
+
+  let color = getColorByName("portfolio");
   return (
     <div className="container">
-      <Navbar/>
+      <div
+        className="halo"
+        style={{
+          background: `${color}`,
+          boxShadow: `0 0 80px 100px ${color}`,
+        }}
+      ></div>
+      <Nav color={color}/>
     <div className='pageContainer portfolioContainer'>Portfolio</div>
     </div>
   )

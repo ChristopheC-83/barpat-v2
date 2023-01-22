@@ -32,7 +32,7 @@ const DataColorContextProvider = (props) => {
     {
       id: 5,
       name: "portfolio",
-      color: "rgb(255, 255,255)",
+      color: "#fff",
       text: "mes productions principales",
     },
     {
