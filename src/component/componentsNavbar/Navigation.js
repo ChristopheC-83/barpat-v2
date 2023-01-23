@@ -21,7 +21,6 @@ export default function Navigation() {
             <NavLink to="/partages">
               <p>Partages</p>
             </NavLink>
-
             <NavLink to="/portfolio">
               <p>Portfolio</p>
             </NavLink>
