@@ -363,6 +363,43 @@ a {
   margin-left: 320px;
 }
 
+.notFoundContainer h2 {
+  font-size: clamp(40px, 20px + 1vh, 60px);
+  color: white;
+  text-align: center;
+  margin: 40px auto;
+}
+.notFoundContainer .content {
+  background: #fff;
+  border-radius: 15px;
+  background: rgba(2, 2, 2, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  height: 80vh;
+  margin: 150px auto;
+  overflow: hidden;
+}
+.notFoundContainer .content img {
+  width: 33vw;
+  max-width: 600px;
+  height: 33vw;
+  max-height: 600px;
+}
+.notFoundContainer .content h3 {
+  font-size: clamp(30px, 10px + 1vh, 50px);
+  color: white;
+  text-align: center;
+  margin: 30px auto;
+}
+
 body {
   background-color: #333;
 }

@@ -10,7 +10,7 @@ export default function Infos({color}) {
       <img
         src={photoProfil}
         alt="christophe"
-        style={{ border: `10px solid ${color}` }}
+        style={{ border: `7px solid ${color}` }}
       />
 
       <h2 style={{borderBottom:`2px solid ${color}`}}>Christophe</h2>
