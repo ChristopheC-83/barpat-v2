@@ -29,7 +29,7 @@ export default function Navigation() {
             <NavLink to="/portfolio">
               <p>Portfolio</p>
             </NavLink>
-            <NavLink to="/sport">
+            <NavLink to="/truc">
               <p>Sport</p>
             </NavLink>
           </li>
