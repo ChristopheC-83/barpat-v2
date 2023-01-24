@@ -1,11 +1,10 @@
-import {useRef, useEffect, useState} from "react";
+import {useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import photoProfil from "../../images/navbar/photoCV.png";
 
 export default function Infos({color}) {
 
  const photo = useRef()
-//  const [animated, setAnimated] = useState(false)
 
 const animated = sessionStorage.getItem('animated');
 console.log(animated)
