@@ -6,7 +6,7 @@ import { dataColorContext } from "../component/Context/ColorContext";
 export default function Informatique() {
   const { getColorByName } = useContext(dataColorContext);
 
-  let color = getColorByName("informatique");
+  let color = getColorByName("parcours");
   return (
     <div className="container">
       <div

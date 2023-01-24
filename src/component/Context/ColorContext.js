@@ -7,30 +7,33 @@ const DataColorContextProvider = (props) => {
   const dataColor = [
     {
       id: 1,
-      name: "cv",
+      name: "accuueil",
       color: "rgb(16, 0, 160)",
       textCV: "Mon CV, tout ce qu'il y  a de plus classique",
       to:"/",
       nameLink:"Accueil",
-      bgc : "#333"
+      bgc : "#333",
+      icone : "fa-solid fa-house"
     },
     {
       id: 2,
-      name: "informatique",
+      name: "cv",
       color: "rgb(0, 0, 0)",
-      text: "formations YT, Udemy et projets",
+      text: "Mes études, exp pro et formations",
       to:"/cv",
       nameLink:"Mon CV",
-      bgc : "#333"
+      bgc : "#333",
+      icone:"fa-solid fa-file-lines"
     },
     {
       id: 3,
       name: "parcours",
       color: "rgb(104, 0, 189)",
-      text: "Mes études, exp pro et formations",
+      text: "formations YT, Udemy et projets",
       to:"/informatique",
       nameLink:"Le Dev'",
-      bgc : "#333"
+      bgc : "#333",
+      icone:"fa-solid fa-laptop-code"
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const DataColorContextProvider = (props) => {
       text: "à travers github, codepen & bientôt microtuto expliqués à un enfant de 12 ans.",
       to:"/partages",
       nameLink:"Mes partages",
-      bgc : "#333"
+      bgc : "#333",
+      icone:"fa-solid fa-hands-holding-circle"
     },
     {
       id: 5,
@@ -48,16 +52,17 @@ const DataColorContextProvider = (props) => {
       text: "mes productions principales",
       to:"/portfolio",
       nameLink:"Portfolio",
-      bgc : "#333"
+      bgc : "#333",
+      icone:"fa-solid fa-book-open-reader"
     },
     {
       id: 6,
       name: "sport",
       color: "rgb(25, 121, 16)",
       text: "Ce que je fais, pourquoi, pour quoi, mes expériences notables.", to:"/sport",
-      nameLink:"Un peu de Sport ?",
-      bgc : "#333"
-    },
+      nameLink:"Du Sport ?",
+      bgc : "#333",
+      icone : "fa-solid fa-person-biking"    },
   ];
 
   function getColorByName(name) {
