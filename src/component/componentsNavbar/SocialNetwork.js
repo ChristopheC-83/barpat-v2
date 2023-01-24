@@ -1,3 +1,5 @@
+import { useRef, useEffect, useState } from "react";
+import { gsap } from "gsap";
 
 export default function SocialNetwork({ color }) {
   const iconListe = [
@@ -27,10 +29,25 @@ export default function SocialNetwork({ color }) {
     },
   ];
 
+  const icones = useRef();
+
+  const animated = sessionStorage.getItem("animated");
+
+  useEffect(() => {
+    if (!animated) {
+      gsap.from(icones.current, {
+        opacity: 0,
+        x: -250,
+        duration: 1.5,
+        delay: 0.75,
+      });
+      sessionStorage.setItem("animated", true);
+    }
+  }, [animated]);
 
   return (
     <div className="socialNetwork">
-      <ul>
+      <ul ref={icones}>
         {iconListe.map((ico) => (
           <li
             key={ico.id}

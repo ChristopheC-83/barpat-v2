@@ -4,7 +4,6 @@ import { dataColorContext } from "../Context/ColorContext";
 
 export default function Navigation() {
   const { dataColor } = useContext(dataColorContext);
-  console.log("nav =>", dataColor[0].to);
 
   return (
     <div className="navigation">
