@@ -39,7 +39,8 @@ export default function SocialNetwork({ color }) {
         opacity: 0,
         x: -250,
         duration: 1.5,
-        delay: 0.75,
+        delay: 0.5,
+        scale:0.2
       });
       sessionStorage.setItem("animated", true);
     }

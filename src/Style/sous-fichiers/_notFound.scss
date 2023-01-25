@@ -29,7 +29,14 @@
         color : white;
         text-align: center;
         margin: 30px auto;
+        
+        &:nth-child(2){
+            color : #00bec0;
+
+            
+        }
     }
+
 
 }
 

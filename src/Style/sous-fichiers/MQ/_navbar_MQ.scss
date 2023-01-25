@@ -1,3 +1,13 @@
 .navbarMiniContainer {
   position: absolute;
+
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  right: 25px;
+  border: 2px solid violet;
+  border-radius: 50%;
+  z-index: 10;
+  @include flexMid;
+
 }
