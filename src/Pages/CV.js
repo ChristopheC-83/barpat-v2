@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 import Nav from "../component/Nav";
-import "../Style/index.scss";
 
 export default function CV(props) {
   const { getColorByName } = useContext(dataColorContext);

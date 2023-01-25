@@ -10,7 +10,6 @@ export default function Navigation() {
       <ul>
         {dataColor.map((link) => (
           <li key={link.id}>
-            {/* <div className="marker"></div> */}
             <NavLink to={link.to}>
               <i className={link.icone} style={{ color: `${link.color}` }}></i>
 

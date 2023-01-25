@@ -346,16 +346,119 @@ a {
 
 .navbarMiniContainer {
   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  transition: all 2s;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+.navbarMiniContainer .toggle {
   width: 50px;
   height: 50px;
-  top: 25px;
-  right: 25px;
-  border: 2px solid violet;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f1f1f1;
+  border: 5px solid #111;
+  color: #111;
   border-radius: 50%;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
+  z-index: 100;
+  transition: all 0.75s;
+}
+.navbarMiniContainer .toggle p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.navbarMiniContainer .menuBarre {
+  width: 250px;
+  height: 380px;
+  position: absolute;
+  top: 60px;
+  right: -400px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1.5s ease;
+}
+.navbarMiniContainer .menuBarre li {
+  list-style: none;
+  width: 100%;
+  padding-right: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.navbarMiniContainer .menuBarre li a {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 15px 0;
+}
+.navbarMiniContainer .menuBarre li a i {
+  font-size: 24px;
+  width: 30px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px #f1f1f1;
+}
+.navbarMiniContainer .menuBarre li a p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: #f1f1f1;
+}
+.navbarMiniContainer .MBActive {
+  right: 0;
+}
+.navbarMiniContainer .socialNetworkBarre {
+  position: absolute;
+  width: 340px;
+  height: 80px;
+  top: 440px;
+  right: -400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1.5s ease;
+}
+.navbarMiniContainer .socialNetworkBarre ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navbarMiniContainer .socialNetworkBarre ul li {
+  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #111;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 0px 0px 10px #f1f1f1;
+}
+.navbarMiniContainer .SNBActive {
+  right: 0;
+}
+.navbarMiniContainer .overlay {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(241, 241, 241, 0.1254901961);
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .parcoursContainer {

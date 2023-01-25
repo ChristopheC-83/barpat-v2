@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../component/Navbar'
+import Nav from '../component/Nav'
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 

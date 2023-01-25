@@ -1,5 +1,5 @@
-import React from 'react'
-import Nav from '../component/Nav'
+import React from "react";
+import Nav from "../component/Nav";
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 
@@ -16,7 +16,8 @@ export default function Parcours(props) {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      <Nav color={color}/>
-    <div className='pageContainer parcoursContainer'>Parcours</div></div>
-  )
+      <Nav color={color} />
+      <div className="pageContainer parcoursContainer">Parcours</div>
+    </div>
+  );
 }
