@@ -17,7 +17,7 @@ export default function CV(props) {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      <div className="centre"></div>
+      {/* <div className="centre"></div> */}
       <Nav color={color} />
       <div className="pageContainer cvContainer">CV</div>
     </div>

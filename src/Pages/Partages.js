@@ -3,7 +3,7 @@ import Nav from '../component/Navbar'
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 
-export default function Partages() {
+export default function Partages(props) {
   const { getColorByName } = useContext(dataColorContext);
 
   let color = getColorByName("partages");

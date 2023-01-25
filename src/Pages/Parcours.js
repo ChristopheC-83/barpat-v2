@@ -1,9 +1,9 @@
 import React from 'react'
-import Nav from '../component/Navbar'
+import Nav from '../component/Nav'
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 
-export default function Parcours() {
+export default function Parcours(props) {
   const { getColorByName } = useContext(dataColorContext);
 
   let color = getColorByName("parcours");

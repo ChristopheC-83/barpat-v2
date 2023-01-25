@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 import React from 'react'
-import Nav from '../component/Navbar'
+import Nav from '../component/Nav'
 
-export default function Sport() {
+export default function Sport(props) {
   const { getColorByName } = useContext(dataColorContext);
 
   let color = getColorByName("sport");

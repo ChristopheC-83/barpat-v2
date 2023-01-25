@@ -1,5 +1,5 @@
-import React from 'react'
-import Nav from '../component/Navbar'
+import React from "react";
+import Nav from "../component/Nav";
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 
@@ -16,8 +16,9 @@ export default function Informatique() {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      
-      <Nav color={color}/>
-    <div className='pageContainer informatiqueContainer'>Informatique</div></div>
-  )
+
+      <Nav color={color} />
+      <div className="pageContainer informatiqueContainer">Informatique</div>
+    </div>
+  );
 }
