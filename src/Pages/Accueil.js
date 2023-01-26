@@ -23,7 +23,10 @@ export default function Accueil() {
           <Drops />
         </div>
         <div className="accueilContent">
-
+<h2>Je n'aurai jamais d'une seule vie <br /> pour apprendre et voir tout ce qui s'offre à moi...</h2>
+<h2>N'étant pas certain d'en avoir une autre, <br /> je m'enrichis autant que faire se peut !</h2>
+<h2>Bon A Rien, Prêt A Tout !</h2>
+<h2>Je teste, creuse fouille m'interroge et passe à l'action</h2>
           
         </div>
       </div>

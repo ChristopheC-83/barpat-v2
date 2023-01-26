@@ -52,6 +52,18 @@ a {
 .accueilContainer {
   color: #fff;
 }
+.accueilContainer .accueilContent {
+  width: 100%;
+  min-height: 50vh;
+  border: 1px solid violet;
+  margin-top: 20px;
+}
+.accueilContainer .accueilContent h2 {
+  font-size: clamp(16px, 2.1vw, 40px);
+  color: black;
+  margin: 20px;
+  text-align: center;
+}
 
 .cvContainer {
   color: #fff;
