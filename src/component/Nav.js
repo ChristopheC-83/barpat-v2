@@ -22,7 +22,7 @@ export default function Nav({ color }) {
 
   return (
     <div>
-      {largeur > 1024 ? <Navbar color={color} /> : <NavbarMini color={color} />}
+      {largeur > 1023 ? <Navbar color={color} /> : <NavbarMini color={color} />}
     </div>
   );
 }

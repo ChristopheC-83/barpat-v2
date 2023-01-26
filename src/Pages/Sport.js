@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
-import React from 'react'
 import Nav from '../component/Nav'
 
 export default function Sport(props) {

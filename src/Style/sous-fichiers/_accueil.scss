@@ -1,6 +1,14 @@
-.accueilContainer{
+.accueilContainer {
+    
+    color: #fff;
 
-          width: 100%;
+
+// .accueilContent{
+//     width: 100%;
+//     height: 100%;
+//     border:1px solid violet;
+// }
+
 
 
 
@@ -9,4 +17,7 @@
 }
 
 
-@import "./MQ/accueil_MQ"
+
+
+
+@import "./MQ/accueil_MQ";

@@ -7,7 +7,7 @@ const DataColorContextProvider = (props) => {
   const dataColor = [
     {
       id: 1,
-      name: "accuueil",
+      name: "accueil",
       color: "rgb(16, 0, 160)",
       textCV: "Mon CV, tout ce qu'il y  a de plus classique",
       to:"/",
