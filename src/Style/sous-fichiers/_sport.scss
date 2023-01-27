@@ -1,15 +1,74 @@
-.sportContainer{
+.sportContainer {
+  //   padding-top: 10px;
+  .titlePage {
+    margin: 20px;
 
-
-
-    
-    color: #fff;
-
-
-
+    h2,
+    h3 {
+      text-align: center;
+      color: #333;
+      font-family: "Dancing Script", cursive;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
 }
 
+.sportContent {
+  width: 100%;
+  min-height: 50vh;
+//   border: 1px solid violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding: 15px;
 
+  .titleSport{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+  h2{
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 0 0 20px 0;
+}
 
-@import "./MQ/sport_MQ"
+  .content {
+    width: 96%;
+    margin: 15px auto;
+    min-height: 20vh;
+    // border: 1px solid violet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 50%;
+      border-radius: 15px;
+      object-fit: contain;
+    }
+
+    .sportText {
+      margin: 10px;
+    }
+  }
+  .sportConclusion {
+    p {
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      text-align: justify;
+    }
+  }
+}
+
+@import "./MQ/sport_MQ";
