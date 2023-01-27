@@ -56,6 +56,18 @@
       border-radius: 15px;
       object-fit: contain;
       max-width: 350px;
+      transform: scale(0.05) translateY(100px);
+      opacity:0.05;
+      animation : apparitionImg 2s ease-out forwards;
+      animation-delay:0.5s
+    }
+
+    @keyframes apparitionImg {
+      to{
+        transform : scale(1) translateY(0);
+        opacity:1
+      }
+      
     }
 
     .sportText {

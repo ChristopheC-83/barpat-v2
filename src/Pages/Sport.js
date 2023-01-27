@@ -9,7 +9,6 @@ export default function Sport(props) {
   const { getColorByName } = useContext(dataColorContext);
 
   const [pageSport, setPageSport] = useState("accueil");
-  console.log("pageSport : ", pageSport);
 
   let color = getColorByName("sport");
   return (

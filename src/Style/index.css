@@ -473,7 +473,7 @@ a {
   width: 100vw;
   min-height: 100vh;
   height: 100%;
-  background-color: rgba(241, 241, 241, 0.5647058824);
+  background-color: rgba(241, 241, 241, 0.6);
   z-index: 9;
   top: 0;
   left: 0;
@@ -544,6 +544,24 @@ a {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 350px;
+  transform: scale(0.05) translateY(100px);
+  opacity: 0.05;
+  -webkit-animation: apparitionImg 2s ease-out forwards;
+          animation: apparitionImg 2s ease-out forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes apparitionImg {
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparitionImg {
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 .sportContent .content .sportText {
   margin: 10px;
@@ -593,6 +611,11 @@ a {
   }
   .sportContent img {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 580px) {
+  .sportContainer {
+    padding-top: 60px;
   }
 }
 @media (max-width: 424px) {
