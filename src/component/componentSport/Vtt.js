@@ -8,10 +8,10 @@ import stlVtt from "../../images/sport/5_stl_vtt.jpg";
 export default function Vtt() {
   return (
     <div className="sportContent">
-        <div className="titleSport">
+        {/* <div className="titleSport">
                   <h2>Le VTT</h2>
             <div className="switch">Le Trail</div>
-        </div>
+        </div> */}
 
       <div className="content">
         <img src={SautVtt} alt="saut en vélo" />
