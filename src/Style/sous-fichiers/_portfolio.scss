@@ -1,10 +1,124 @@
-.portfolioContainer{
+.portfolioContainer {
+  color: #fff;
 
+  .cardPortfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $noir1;
+    width: 95%;
+    margin: 0 auto;
 
-    
-    color: #fff;
+    .cadreImgCard {
+      width: 20vw;
+      height: 30vw;
+      background-color: #333;
+      position: relative;
+      margin: 30px;
+      overflow: hidden;
 
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 10vw;
+        width: 100vw;
+        background: linear-gradient(
+          0deg,
+          rgba(51, 51, 51, 1) 0%,
+          rgba(200, 200, 200, 1) 25%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(200, 200, 200, 1) 75%,
+          rgba(51, 51, 51, 1) 100%
+        );
+        z-index: 0;
+        animation: afterRotate 8s linear infinite;
+      }
+      @keyframes afterRotate {
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+    }
+
+    .imgCard {
+      width: 98%;
+      height: 98%;
+      position: relative;
+      top: 1%;
+      left: 1%;
+      overflow: hidden;
+      z-index: 5;
+    }
+
+    .textCard {
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+    //   border: 1px solid violet;
+      position: relative;
+      display: flex;
+
+      h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        text-decoration: underline;
+        font-size: 18px;
+        margin: 20px 0 20px 10px;
+      }
+
+      p {
+        margin: 10px;
+        font-size: 16px;
+      }
+     
+
+      .content{
+        justify-content: center;
+        span{
+            text-decoration: underline;
+        }
+    }
+
+    .benef{
+        justify-content: center;
+        span{
+            text-decoration: underline;
+        }
+    }
+
+    .technos{
+    width:80%;
+    height:80px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    i{
+        font-size: 40px;
+        margin: 10px;
+        text-shadow: 1px 1px 1px #333
+    };
+    img{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        filter: drop-shadow(1px 1px 1px #333)
+    }
+
+    }
+    }
+  }
 }
 
-
-@import "./MQ/portfolio_MQ"
+@import "./MQ/portfolio_MQ";

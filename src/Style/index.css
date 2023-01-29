@@ -377,7 +377,7 @@ a {
   height: 50px;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
   background: #f1f1f1;
   border: 5px solid #111;
   color: #111;
@@ -492,12 +492,148 @@ a {
 .portfolioContainer {
   color: #fff;
 }
+.portfolioContainer .cardPortfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #111;
+  width: 95%;
+  margin: 0 auto;
+}
+.portfolioContainer .cardPortfolio .cadreImgCard {
+  width: 20vw;
+  height: 30vw;
+  background-color: #333;
+  position: relative;
+  margin: 30px;
+  overflow: hidden;
+}
+.portfolioContainer .cardPortfolio .cadreImgCard::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10vw;
+  width: 100vw;
+  background: linear-gradient(0deg, rgb(51, 51, 51) 0%, rgb(200, 200, 200) 25%, rgb(255, 255, 255) 50%, rgb(200, 200, 200) 75%, rgb(51, 51, 51) 100%);
+  z-index: 0;
+  -webkit-animation: afterRotate 8s linear infinite;
+          animation: afterRotate 8s linear infinite;
+}
+@-webkit-keyframes afterRotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes afterRotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.portfolioContainer .cardPortfolio .imgCard {
+  width: 98%;
+  height: 98%;
+  position: relative;
+  top: 1%;
+  left: 1%;
+  overflow: hidden;
+  z-index: 5;
+}
+.portfolioContainer .cardPortfolio .textCard {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+}
+.portfolioContainer .cardPortfolio .textCard h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.portfolioContainer .cardPortfolio .textCard h4 {
+  text-decoration: underline;
+  font-size: 18px;
+  margin: 20px 0 20px 10px;
+}
+.portfolioContainer .cardPortfolio .textCard p {
+  margin: 10px;
+  font-size: 16px;
+}
+.portfolioContainer .cardPortfolio .textCard .content {
+  justify-content: center;
+}
+.portfolioContainer .cardPortfolio .textCard .content span {
+  text-decoration: underline;
+}
+.portfolioContainer .cardPortfolio .textCard .benef {
+  justify-content: center;
+}
+.portfolioContainer .cardPortfolio .textCard .benef span {
+  text-decoration: underline;
+}
+.portfolioContainer .cardPortfolio .textCard .technos {
+  width: 80%;
+  height: 80px;
+}
+.portfolioContainer .cardPortfolio .textCard .technos .logo {
+  display: flex;
+  align-items: center;
+}
+.portfolioContainer .cardPortfolio .textCard .technos i {
+  font-size: 40px;
+  margin: 10px;
+  text-shadow: 1px 1px 1px #333;
+}
+.portfolioContainer .cardPortfolio .textCard .technos img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  filter: drop-shadow(1px 1px 1px #333);
+}
 
-.sportContainer .titlePage {
+@media (max-width: 1023px) {
+  .portfolioContainer .cardPortfolio {
+    margin: 70px 0;
+  }
+  .portfolioContainer .cardPortfolio .cadreImgCard {
+    margin: 0;
+    height: 90%;
+    width: 35%;
+    padding-top: 3px;
+  }
+  .portfolioContainer .cardPortfolio .textCard {
+    width: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .portfolioContainer .cardPortfolio {
+    flex-direction: column;
+  }
+  .portfolioContainer .cardPortfolio .cadreImgCard {
+    width: 300px;
+    max-width: 90%;
+  }
+  .portfolioContainer .cardPortfolio .textCard {
+    width: 90%;
+  }
+  .portfolioContainer .cardPortfolio .logo {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 580px) {
+  .portfolioContainer {
+    padding-top: 60px;
+  }
+}
+.titlePage {
   margin: 20px;
 }
-.sportContainer .titlePage h2,
-.sportContainer .titlePage h3 {
+.titlePage h2,
+.titlePage h3 {
   text-align: center;
   color: #333;
   font-family: "Dancing Script", cursive;
@@ -505,7 +641,7 @@ a {
   font-size: 35px;
   margin-bottom: 10px;
 }
-.sportContainer .titlePage h3 {
+.titlePage h3 {
   font-size: 25px;
 }
 
@@ -679,7 +815,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 320px 1fr;
-  width: 100vw;
+  width: 98vw;
   max-width: 1920px;
   margin: 0 auto;
   background-color: #fff;
@@ -732,6 +868,7 @@ body {
   max-width: 1620px;
   min-height: 90vh;
   margin: 1vh 0;
+  margin-right: 1vh;
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
@@ -745,10 +882,17 @@ body {
 @media (max-width: 1023px) {
   .container {
     display: flex;
+    align-items: center;
   }
   .pageContainer {
     margin-left: 1vh;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .pageContainer {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -4,10 +4,7 @@ import { useContext } from "react";
 import { dataColorContext } from "../Context/ColorContext";
 
 export default function SocialNetwork({ color }) {
-
   const { iconListe } = useContext(dataColorContext);
-  console.log()
-  
 
   const icones = useRef();
 
@@ -20,7 +17,7 @@ export default function SocialNetwork({ color }) {
         x: -250,
         duration: 1.5,
         delay: 0.5,
-        scale:0.2
+        scale: 0.2,
       });
       sessionStorage.setItem("animated", true);
     }

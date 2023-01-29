@@ -25,7 +25,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 320px 1fr;
-  width: 100vw;
+  width: 98vw;
   max-width: 1920px;
   margin: 0 auto;
   background-color:#fff;
@@ -64,6 +64,7 @@ body {
   max-width: 1620px;
   min-height: 90vh;
   margin: 1vh 0;
+  margin-right: 1vh;
   @include glassMorphBlack;
 }
 
@@ -71,10 +72,22 @@ body {
 
   .container{
     display: flex;
+    align-items: center;
   }
   .pageContainer {
     margin-left: 1vh;
     display: flex;
     flex-direction: column;
   }
+}
+
+
+@media (max-width : 767px){
+  .pageContainer {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+  }
+
+
+
 }
