@@ -26,7 +26,7 @@ export const dataPortfolio = [
   {
     id: 3,
     img: "../images/portfolio/siteVeloExpresso.jpg",
-    title: "siteVéloExpresso",
+    title: "Le site Vélo Expresso",
     content:
       "Premier site fait pour des amis et leur boutique de vélos. ",
     benefices: "Première expérience pour autrui. Donc petite pression supplémentaire mais satisfaction en corollaire ! Je suis parti d'une page blanche. Faute d'informations pour le finir, il est pour l'instant en stand-by.",

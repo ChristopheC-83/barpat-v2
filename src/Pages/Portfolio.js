@@ -20,29 +20,29 @@ export default function Portfolio(props) {
       ></div>
       <Nav color={color} />
       <div className="pageContainer portfolioContainer">
-      <div className="titlePage">
+        <div className="titlePage">
           <h2>Voici mes modestes et premières productions !</h2>
-          <h2> Elles sont des créations originiales</h2>
-          <h3>(Je ne vais pas mettre des pages produites lors de tuto là-dedans quand même ! 😅)</h3>
+          <h2>Ou comment mettre en application mon apprentissage !</h2>
+          <h3>
+            (Vous ne verrez pas de pages produite lors de tuto là-dedans ! Quand
+            même ! 😅)
+          </h3>
         </div>
         <div className="listeSites">
-          
-
-        {dataPortfolio.map((card) => (
-          <div className="cardContainer" key={card.id}>
-            <Card
-              title={card.title}
-              img={card.img}
-              content={card.content}
-              benefices={card.benefices}
-              technoUtilisees={card.technoUtilisees}
-              techno={card.techno}
-              link={card.link}
-            />
-          </div>
-        ))}
+          {dataPortfolio.map((card) => (
+            <div className="cardContainer" key={card.id}>
+              <Card
+                title={card.title}
+                img={card.img}
+                content={card.content}
+                benefices={card.benefices}
+                technoUtilisees={card.technoUtilisees}
+                techno={card.techno}
+                link={card.link}
+              />
+            </div>
+          ))}
         </div>
-
       </div>
     </div>
   );

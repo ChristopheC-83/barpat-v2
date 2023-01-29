@@ -1,5 +1,33 @@
 .informatiqueContainer {
   color: #fff;
+
+  .formations {
+    
+    .intro, .intro2 {
+      color: #333;
+      width: 90%;
+      margin: 30px auto;
+      text-align: justify;
+
+      .suite {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .cours{
+      width: 98%;
+      min-height: 500px;
+      border: 3px solid black;
+      border-radius: 15px;
+      margin: 20px auto;
+      background-color: #33333325;
+    
+    }
+
+  }
 }
 
 @import "./MQ/informatique_MQ";
