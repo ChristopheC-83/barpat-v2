@@ -1,11 +1,26 @@
 import Nav from "../component/Nav";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
+import { dataCours } from "../data/dataCours";
+import Cours from "../component/componentInformatique/Cours";
+import InfoCours from "../component/componentInformatique/InfoCours";
 
 export default function Informatique() {
   const { getColorByName } = useContext(dataColorContext);
 
+  console.log(dataCours[0]);
+
   let color = getColorByName("parcours");
+
+  const [lesson, setLesson] = useState(0)
+
+function selectedLesson(elt){
+setLesson(elt)
+
+}
+
+console.log(lesson)
+
   return (
     <div className="container">
       <div
@@ -61,7 +76,9 @@ export default function Informatique() {
             1) retapant l'intégralité du code
             <br />
             2) ajoutant des effets/tests personnalisés. <br />
-            3) en refaisant des pages.projets personnalisés à coté. <br />
+            3) tous les cours (sauf python par jonathan Roux) ont été suivis
+            jusqu'au bout avec obtention du certificat. <br />
+            4) en refaisant des pages.projets personnalisés à coté. <br />
             <br />
             Je maîtrise? Je ne pense pas... ou au moins pas totalement, loin de
             là ! <br />
@@ -69,10 +86,38 @@ export default function Informatique() {
             qu'à être mises en oeuvre pour être acquises.
           </p>
 
-          <div className="cours">
-            
+          <div className="etalage">
+            {dataCours.map((cours) => (
+              
+                
+                <div
+                  className="cadre"
+                  key={cours.id}
+                  style={{
+                    width: `${cours.width}px`,
+                    height: `${cours.width / 1.78}px`,
+                    top: cours.top,
+                    left: cours.left,
+                    transform: cours.rotate,
+                  }}
 
+                  onClick = {()=>selectedLesson(cours.id)}
 
+                >
+                  <Cours
+                    name={cours.name}
+                    img={cours.img}
+                    comp1={cours.comp1}
+                    comp2={cours.comp2}
+                    comp3={cours.comp3}
+                    comp4={cours.comp4}
+
+                    
+                  />
+                </div>
+                
+              
+            ))}
           </div>
         </div>
       </div>
