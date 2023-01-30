@@ -213,6 +213,7 @@ a {
   margin: 20px auto;
   background-color: rgba(51, 51, 51, 0.1450980392);
   position: relative;
+  overflow: hidden;
 }
 .informatiqueContainer .formations .etalage .cadre {
   position: absolute;
@@ -251,6 +252,17 @@ a {
   border: 4px solid violet;
   width: 200px;
   height: 150px;
+}
+.informatiqueContainer .formations .etalage .detailsOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 50;
 }
 
 .navbarContainer {

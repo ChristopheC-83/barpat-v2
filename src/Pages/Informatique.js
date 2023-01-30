@@ -12,14 +12,13 @@ export default function Informatique() {
 
   let color = getColorByName("parcours");
 
-  const [lesson, setLesson] = useState(0)
+  const [lesson, setLesson] = useState(0);
 
-function selectedLesson(elt){
-setLesson(elt)
+  function selectedLesson(elt) {
+    setLesson(elt);
+  }
 
-}
-
-console.log(lesson)
+  console.log(lesson);
 
   return (
     <div className="container">
@@ -88,36 +87,34 @@ console.log(lesson)
 
           <div className="etalage">
             {dataCours.map((cours) => (
-              
-                
-                <div
-                  className="cadre"
-                  key={cours.id}
-                  style={{
-                    width: `${cours.width}px`,
-                    height: `${cours.width / 1.78}px`,
-                    top: cours.top,
-                    left: cours.left,
-                    transform: cours.rotate,
-                  }}
-
-                  onClick = {()=>selectedLesson(cours.id)}
-
-                >
-                  <Cours
-                    name={cours.name}
-                    img={cours.img}
-                    comp1={cours.comp1}
-                    comp2={cours.comp2}
-                    comp3={cours.comp3}
-                    comp4={cours.comp4}
-
-                    
-                  />
-                </div>
-                
-              
+              <div
+                className="cadre"
+                key={cours.id}
+                style={{
+                  width: `${cours.width}px`,
+                  height: `${cours.width / 1.78}px`,
+                  top: cours.top,
+                  left: cours.left,
+                  transform: cours.rotate,
+                }}
+                onClick={() => selectedLesson(cours.id)}
+              >
+                <Cours
+                  name={cours.name}
+                  img={cours.img}
+                  comp1={cours.comp1}
+                  comp2={cours.comp2}
+                  comp3={cours.comp3}
+                  comp4={cours.comp4}
+                />
+              </div>
             ))}
+
+            <div className="detailsOverlay">
+
+                
+
+            </div>
           </div>
         </div>
       </div>
