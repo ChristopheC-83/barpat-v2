@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+  .informatiqueContainer {
+    .formations {
+      .etalage {
+        .infoCours {
+          //    flex-direction: column;
+        //   width: 100%;
+
+          .left {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px){
+    .informatiqueContainer {
+        .formations {
+          .etalage {
+            .infoCours {
+                   flex-direction: column;
+    
+              .left {
+                width: 100%;
+                border:none;
+                img{
+                margin: 15px;
+                }
+              }
+              .right{
+                width: 100%;
+            }
+            }
+          }
+        }
+      }
+}

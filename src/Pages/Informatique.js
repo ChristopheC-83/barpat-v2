@@ -12,13 +12,14 @@ export default function Informatique() {
 
   let color = getColorByName("parcours");
 
-  const [lesson, setLesson] = useState(0);
+  const [lesson, setLesson] = useState(99);
 
   function selectedLesson(elt) {
     setLesson(elt);
   }
 
-  console.log(lesson);
+  console.log("lesson : ", lesson);
+  // console.log("name :" ,dataCours[lesson].name)
 
   return (
     <div className="container">
@@ -91,13 +92,13 @@ export default function Informatique() {
                 className="cadre"
                 key={cours.id}
                 style={{
-                  width: `${cours.width}px`,
-                  height: `${cours.width / 1.78}px`,
+                  // width: `${cours.width}px`,
+                  // height: `${cours.width / 1.78}px`,
                   top: cours.top,
                   left: cours.left,
                   transform: cours.rotate,
                 }}
-                onClick={() => selectedLesson(cours.id)}
+                onClick={() => selectedLesson(cours.id-1)}
               >
                 <Cours
                   name={cours.name}
@@ -110,10 +111,32 @@ export default function Informatique() {
               </div>
             ))}
 
-            <div className="detailsOverlay">
+            <div
+              
+              className= 
+              {lesson!==99 ?
+              "detailsOverlay":"detailsOverlayMute"}
 
-                
+            >
+              {lesson!==99 ?
+               <InfoCours
+               name={dataCours[lesson].name}
+               name2={dataCours[lesson].name2}
+               img={dataCours[lesson].img}
+               comp1={dataCours[lesson].comp1}
+               comp2={dataCours[lesson].comp2}
+               comp3={dataCours[lesson].comp3}
+               comp4={dataCours[lesson].comp4}
+             /> : 
+             ""
+               
+               }
 
+              <div 
+              className="closeOverlay" 
+              onClick={() => selectedLesson(99)}>
+                X
+              </div>
             </div>
           </div>
         </div>

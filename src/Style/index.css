@@ -207,7 +207,8 @@ a {
 }
 .informatiqueContainer .formations .etalage {
   width: 98%;
-  min-height: 500px;
+  max-width: 1350px;
+  height: clamp(450px, 150px + 17vw, 550px);
   border: 3px solid black;
   border-radius: 15px;
   margin: 20px auto;
@@ -217,15 +218,15 @@ a {
 }
 .informatiqueContainer .formations .etalage .cadre {
   position: absolute;
-  top: 200px;
-  left: 200px;
+  width: clamp(100px, 80px + 10vw, 250px);
+  height: clamp(60px, 50px + 6vw, 170px);
   border: 3px solid #333;
   padding: 3px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #333;
-  transform: rotate(-10deg);
   overflow: hidden;
   cursor: pointer;
+  transform: translateX(-50%);
 }
 .informatiqueContainer .formations .etalage .picto {
   position: absolute;
@@ -245,15 +246,55 @@ a {
   height: 98%;
   border-radius: 10px;
 }
-.informatiqueContainer .formations .etalage .infoCours {
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  border: 4px solid violet;
-  width: 200px;
-  height: 150px;
-}
 .informatiqueContainer .formations .etalage .detailsOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  opacity: 0.5;
+  background-color: rgba(238, 238, 238, 0.6);
+  z-index: 25;
+  -webkit-animation: comeOn 1.5s forwards;
+          animation: comeOn 1.5s forwards;
+  overflow: hidden;
+}
+@-webkit-keyframes comeOn {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes comeOn {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.informatiqueContainer .formations .etalage .detailsOverlay h2 {
+  color: #333;
+}
+.informatiqueContainer .formations .etalage .detailsOverlayMute {
+  display: none;
+}
+.informatiqueContainer .formations .etalage .closeOverlay {
+  position: absolute;
+  width: clamp(35px, 5vw, 50px);
+  height: clamp(35px, 5vw, 50px);
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  bottom: 15px;
+  z-index: 50;
+  background-color: rgba(255, 0, 0, 0.6);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.informatiqueContainer .formations .etalage .infoCours {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -261,10 +302,76 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #fff;
-  z-index: 50;
+  display: flex;
+  background-color: rgba(238, 238, 238, 0.6);
+}
+.informatiqueContainer .formations .etalage .infoCours .left {
+  width: 50%;
+  height: 100%;
+  border-right: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(238, 238, 238, 0.6);
+}
+.informatiqueContainer .formations .etalage .infoCours .left img {
+  width: 60%;
+  box-shadow: 4px 4px 8px #333;
+}
+.informatiqueContainer .formations .etalage .infoCours .left h2 {
+  font-size: clamp(22px, 12px + 1vw, 35px);
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.informatiqueContainer .formations .etalage .infoCours .right {
+  width: 50%;
+  height: 100%;
+  padding: 20px 15px 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  background-color: rgba(238, 238, 238, 0.6);
+}
+.informatiqueContainer .formations .etalage .infoCours .right h2 {
+  font-size: clamp(22px, 12px + 1vw, 35px);
+  text-align: center;
+  text-decoration: underline;
+}
+.informatiqueContainer .formations .etalage .infoCours .right h3 {
+  color: #333;
+}
+.informatiqueContainer .formations .etalage .infoCours .right .comp {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
 }
 
+@media (max-width: 767px) {
+  .informatiqueContainer .formations .etalage .infoCours .left {
+    width: 40%;
+  }
+}
+@media (max-width: 580px) {
+  .informatiqueContainer .formations .etalage .infoCours {
+    flex-direction: column;
+  }
+  .informatiqueContainer .formations .etalage .infoCours .left {
+    width: 100%;
+    border: none;
+  }
+  .informatiqueContainer .formations .etalage .infoCours .left img {
+    margin: 15px;
+  }
+  .informatiqueContainer .formations .etalage .infoCours .right {
+    width: 100%;
+  }
+}
 .navbarContainer {
   width: 300px;
   height: 96vh;

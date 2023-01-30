@@ -19,7 +19,9 @@
 
     .etalage {
       width: 98%;
-      min-height: 500px;
+      max-width: 1350px;
+      height: clamp(450px, 150px + 17vw, 550px);
+      
       border: 3px solid black;
       border-radius: 15px;
       margin: 20px auto;
@@ -29,15 +31,17 @@
 
       .cadre {
         position: absolute;
-        top: 200px;
-        left: 200px;
+        // top: 200px;
+        // left: 200px;
+        width: clamp(100px, calc(80px + 10vw) , 250px);
+        height: clamp(60px, calc(50px + 6vw), 170px);
         border: 3px solid #333;
         padding: 3px;
         border-radius: 10px;
         box-shadow: 2px 2px 4px #333;
-        transform: rotate(-10deg);
         overflow: hidden;
         cursor: pointer;
+        transform: translateX(-50%);
       }
 
       .picto {
@@ -54,31 +58,112 @@
         img {
           width: 99%;
           height: 98%;
-          border-radius: 10px
+          border-radius: 10px;
         }
       }
 
-      .infoCours{
-        position: absolute;
-        bottom: 100px;
-        right: 100px;
-        border:4px solid violet;
-        width: 200px;
-        height: 150px;
-      }
-
-      .detailsOverlay{
+      .detailsOverlay {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
+        left: 100%;
+        opacity: 0.5;
+        background-color: #eeeeee99;
+        z-index: 25;
+        animation: comeOn 1.5s forwards;
+        overflow: hidden;
+
+        @keyframes comeOn {
+          to {
+            left: 0;
+            opacity: 1;
+          }
+        }
+
+        h2 {
+          color: #333;
+        }
+      }
+      .detailsOverlayMute {
+        display: none;
+      }
+
+      .closeOverlay {
+        position: absolute;
+        width: clamp(35px, 5vw, 50px);
+        height: clamp(35px, 5vw, 50px);
+        border-radius: 50%;
+        border: 3px solid black;
+        @include flexMid;
+        right: 15px;
+        bottom: 15px;
+        z-index: 50;
+        background-color: #ff000099;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .infoCours {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // min-width: 50vw;
+        top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: #fff;
-        z-index: 50;
-      }
+        display: flex;
+        background-color: #eeeeee99;
 
+        .left {
+          width: 50%;
+          height: 100%;
+          border-right: 3px solid black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          background-color: #eeeeee99;
+          img {
+            width: 60%;
+            box-shadow: 4px 4px 8px #333;
+          }
+          h2 {
+            font-size: clamp(22px, calc(12px + 1vw), 35px);
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+          }
+        }
+        .right {
+          width: 50%;
+          height: 100%;
+          padding: 20px 15px 40px 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: space-around;
+          background-color: #eeeeee99;
+
+          h2 {
+            font-size: clamp(22px, calc(12px + 1vw), 35px);
+            text-align: center;
+            text-decoration: underline;
+          }
+          h3 {
+            color: #333;
+          }
+          .comp {
+            width: 100%;
+            height:60%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+          }
+        }
+      }
     }
   }
 }
