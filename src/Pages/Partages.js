@@ -23,7 +23,7 @@ export default function Partages(props) {
           <h2> Puis de les partager sous forme d'une micro encyclopédie.</h2>
           <h3>( + une notion en 2 minutes par jour pour apprendre comme à un enfant)</h3>
           <br /><br /><br />
-          <h2>En attendant, <br /> je vais essayer de nourrir GitHub et CodePen...</h2>
+          <h2>En attendant, <br /> je vais essayer de nourrir GitHub et CodePen... </h2>
         </div>
       </div>
     </div>
