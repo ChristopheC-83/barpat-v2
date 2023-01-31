@@ -13,7 +13,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space space-between;
   align-items: center;
 
   .languages,
@@ -42,16 +42,21 @@
   width: 50%;
   height: 100%;
   margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space space-between;
+  align-items: center;
 
   .expPro {
-    height: 66%;
+    height: 65%;
+    width: 100%;
     @include glassMorphBlack;
-    margin-bottom: 7px;
+    margin-bottom: 14px;
   }
 
   .studies {
     height: 34%;
-    margin-bottom: 7px;
+    width: 100%;
 
     @include glassMorphBlack;
   }
