@@ -74,18 +74,31 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.cvContainer h2 {
+  width: 80%;
+  text-align: center;
+  margin: 1.5vh auto 0.75vh;
+  font-weight: bold;
+  font-size: clamp(15px, 10px + 1.2vw, 30px);
+}
+.cvContainer p {
+  line-height: clamp(18px, 2vh, 20px);
+  font-size: clamp(14px, 6px + 1vh, 17px);
+}
+.cvContainer p span {
+  text-decoration: underline;
+}
 
 .cvLeft {
   width: 50%;
-  height: 100%;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space space-between;
   align-items: center;
 }
 .cvLeft .languages,
-.cvLeft .skills,
-.cvLeft .others {
+.cvLeft .skills {
   display: flex;
   width: 100%;
   min-height: 50px;
@@ -99,20 +112,70 @@ a {
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
 }
 .cvLeft .languages {
-  height: 33%;
-  margin-bottom: 7px;
+  height: 45%;
+  margin-bottom: 1%;
+}
+.cvLeft .languages .langContent {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+.cvLeft .languages .langContent::before {
+  content: "";
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 4px;
+  height: 90%;
+  border-radius: 4px;
+  left: 66%;
+  top: 5%;
+}
+.cvLeft .languages .langContent::after {
+  content: "";
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 4px;
+  height: 90%;
+  border-radius: 4px;
+  left: 100%;
+  top: 5%;
+}
+.cvLeft .languages .langContent h4 {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+.cvLeft .languages .langContent h4::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  height: 4px;
+  border-radius: 4px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0%;
+  -webkit-animation: barchart 1.25s linear forwards ease-out;
+          animation: barchart 1.25s linear forwards ease-out;
+}
+.cvLeft .languages .langContent .lang,
+.cvLeft .languages .langContent .techno {
+  width: 100%;
+  height: 48%;
 }
 .cvLeft .skills {
-  height: 50%;
-  margin-bottom: 7px;
-}
-.cvLeft .others {
-  height: 17%;
+  height: 55%;
 }
 
 .cvRight {
   width: 50%;
-  height: 100%;
+  min-height: 90vh;
   margin-left: 7px;
   display: flex;
   flex-direction: column;
@@ -120,7 +183,22 @@ a {
   align-items: center;
 }
 .cvRight .expPro {
-  height: 65%;
+  height: 40%;
+  width: 100%;
+  min-height: 510px;
+  background: #fff;
+  border-radius: 15px;
+  background: rgba(2, 2, 2, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+}
+.cvRight .studies {
+  height: 40%;
+  margin: 1% 0;
+  min-height: 310px;
   width: 100%;
   background: #fff;
   border-radius: 15px;
@@ -130,11 +208,12 @@ a {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
-  margin-bottom: 14px;
 }
-.cvRight .studies {
-  height: 34%;
+.cvRight .others {
+  display: flex;
   width: 100%;
+  min-height: 200px;
+  height: 20%;
   background: #fff;
   border-radius: 15px;
   background: rgba(2, 2, 2, 0.2);
@@ -150,11 +229,18 @@ a {
   height: 100%;
   border: 1px solid violet;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-
+.cvContent .studiesContent,
+.cvContent .proContent,
+.cvContent .othersContent {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .dropsContainer {
   width: calc(100vw - 350px);
   max-width: 1920px;
