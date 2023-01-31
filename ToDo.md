@@ -1,13 +1,5 @@
 2023.01.20 : 
 
-Faire la barre de menu
-
-inspiration tuto online
-
-
-
-
-
 
 
 

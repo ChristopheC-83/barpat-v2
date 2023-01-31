@@ -1,7 +1,67 @@
 .cvContainer {
-    color: #fff;
-    
-  
+  width: 100%;
+  max-width: 1620px;
+  min-height: 90vh;
+  margin: 1vh 0;
+  margin-right: 1vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvLeft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .languages,
+  .skills,
+  .others {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    @include glassMorphBlack;
+  }
+
+  .languages {
+    height: 33%;
+    margin-bottom: 7px;
+  }
+  .skills {
+    height: 50%;
+    margin-bottom: 7px;
+  }
+  .others {
+    height: 17%;
+  }
+}
+
+.cvRight {
+  width: 50%;
+  height: 100%;
+  margin-left: 7px;
+
+  .expPro {
+    height: 66%;
+    @include glassMorphBlack;
+    margin-bottom: 7px;
+  }
+
+  .studies {
+    height: 34%;
+    margin-bottom: 7px;
+
+    @include glassMorphBlack;
+  }
+}
+.cvContent {
+  width: 100%;
+  height: 100%;
+  border: 1px solid violet;
+  @include flexMid;
+  flex-direction: column;
 }
 
 @import "./MQ/cv_MQ";

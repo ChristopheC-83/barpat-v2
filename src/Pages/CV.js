@@ -18,7 +18,28 @@ export default function CV(props) {
       ></div>
       {/* <div className="centre"></div> */}
       <Nav color={color} />
-      <div className="pageContainer cvContainer">CV</div>
+      <div className="cvContainer">
+        <div className="cvLeft">
+          <div className="languages">
+            <div className="languagesContent cvContent"></div>
+          </div>
+          <div className="skills">
+            <div className="skillsContent cvContent"></div>
+          </div>
+
+          <div className="others">
+            <div className="othersContent cvContent"></div>
+          </div>
+        </div>
+        <div className="cvRight">
+          <div className="expPro">
+            <div className="expProContent cvContent"></div>
+          </div>
+          <div className="studies">
+            <div className="studiesContent cvContent"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
