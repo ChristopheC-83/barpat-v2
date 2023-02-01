@@ -1,0 +1,77 @@
+@media (max-width: 767px) {
+  .cvContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0vh;
+    padding-top: 60px;
+
+    .cvLeft,
+    .cvRight {
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      margin: 0 auto;
+      margin-bottom: 10px;
+
+      .languages {
+        height: 60vw;
+      }
+      .proContent {
+        padding: 10px 5px;
+        p {
+          padding-top: 10px;
+        }
+      }
+
+      .studies {
+        padding: 10px 5px;
+        p {
+          padding-top: 10px;
+        }
+      }
+
+      .others {
+        padding: 10px 5px;
+        .othersContent {
+          .li {
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .expPro {
+        min-height: auto;
+      }
+
+      .skills {
+        padding: 10px 5px;
+
+        li {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .cvContainer {
+    .cvLeft {
+      .languages {
+        .langContent {
+          .barchart {
+            h4 {
+              font-size: 14px;
+              text-align: left;
+              margin-right: 5px;
+            }
+            .barre::after {
+                height: 3px;
+              }
+            }
+          
+        }
+      }
+    }
+  }
+}

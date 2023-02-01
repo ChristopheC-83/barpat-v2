@@ -21,154 +21,173 @@
       text-decoration: underline;
     }
   }
-}
 
-.cvLeft {
-  width: 50%;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space space-between;
-  align-items: center;
-
-  .languages,
-  .skills {
+  .cvLeft {
+    width: 50%;
+    min-height: 90vh;
     display: flex;
-    width: 100%;
-    min-height: 50px;
-    @include glassMorphBlack;
+    flex-direction: column;
+    justify-content: space space-between;
+    align-items: center;
+
+    .languages,
+    .skills {
+      display: flex;
+      width: 100%;
+      min-height: 50px;
+      @include glassMorphBlack;
+    }
+
+    .languages {
+      height: 45%;
+      margin-bottom: 1%;
+
+      .langContent {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #f1f1f1;
+          width: 4px;
+          height: 90%;
+          border-radius: 4px;
+          left: 66%;
+          top: 5%;
+          // transform: translateY(-50%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #f1f1f1;
+          width: 4px;
+          height: 90%;
+          border-radius: 4px;
+          left: 100%;
+          top: 5%;
+          // transform: translateY(-50%);
+        }
+        .barchart {
+          width: 100%;
+          h4 {
+            display: inline-block;
+            width: 34%;
+            text-align: center;
+            position: relative;
+            font-weight: bold;margin-right: 5px;
+          }
+
+          .barre {
+            width: 66%;
+            height: 100%;
+            display: inline-block;
+            position: relative;
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background: #333;
+              border-radius: 50px;
+              height: 6px;
+              width: 0;
+              animation: line 2s ease-out forwards;
+              animation-delay: 2s;
+
+              @keyframes line {
+                to {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .lang,
+        .techno {
+          width: 100%;
+          height: 48%;
+          // border:1px solid black; 
+        }
+      }
+    }
+    .skills {
+      height: 55%;
+      display: flex;
+      flex-direction: column;
+
+      .competencesContent {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        ul {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          li {
+            line-height: clamp(18px, 2vh, 20px);
+            font-size: clamp(14px, 6px + 1vh, 17px);
+          }
+        }
+      }
+    }
   }
 
-  .languages {
-    height: 45%;
-    margin-bottom: 1%;
+  .cvRight {
+    width: 50%;
+    min-height: 90vh;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space space-between;
+    align-items: center;
 
-    .langContent {
-      // border: 3px solid yellowgreen;
+    .expPro {
+      height: 40%;
+      width: 100%;
+      min-height: 510px;
+      @include glassMorphBlack;
+    }
+
+    .studies {
+      height: 40%;
+      margin: 1% 0;
+      min-height: 310px;
+      width: 100%;
+      @include glassMorphBlack;
+    }
+    .others {
+      display: flex;
+      width: 100%;
+      min-height: 200px;
+      height: 20%;
+      @include glassMorphBlack;
+    }
+  }
+
+  .cvContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .studiesContent,
+    .proContent,
+    .othersContent {
       width: 90%;
       margin: 0 auto;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: #f1f1f1;
-        width: 4px;
-        height: 90%;
-        border-radius: 4px;
-        left: 66%;
-        top: 5%;
-        // transform: translateY(-50%);
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        background-color: #f1f1f1;
-        width: 4px;
-        height: 90%;
-        border-radius: 4px;
-        left: 100%;
-        top: 5%;
-        // transform: translateY(-50%);
-      }
-      
-      h4 {
-        display: inline-block;
-        width: 33%;
-        text-align: center;
-        position: relative;
-        font-weight: bold;
-
-        &::after {
-          content: "";
-          position: absolute;
-          background-color: #333;
-          height: 4px;
-          border-radius: 4px;
-          left: 100%;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 0%;
-          animation: barchart 1.25s linear forwards ease-out;
-        }
-        }
-        // h4:nth-child(1) {&::after {width: 100%}}
-        // h4:nth-child(2) {&::after {width: 180%}}
-        // h4:nth-child(3) {&::after {width: 150%}}
-        // h4:nth-child(4) {&::after {width: 150%}}
-        // h4:nth-child(5) {&::after {width: 100%}}
-        // h4:nth-child(6) {&::after {width: 125%}}
-
-        .lang,
-        .techno {
-          width: 100%;
-          height: 48%;
-          // border:1px solid black;
-        }
-      }
-    
-  }
-  .skills {
-    height: 55%;
-  }
-}
-
-.cvRight {
-  width: 50%;
-  min-height: 90vh;
-  margin-left: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space space-between;
-  align-items: center;
-
-  .expPro {
-    height: 40%;
-    width: 100%;
-    min-height: 510px;
-    @include glassMorphBlack;
-  }
-
-  .studies {
-    height: 40%;
-    margin: 1% 0;
-    min-height: 310px;
-    width: 100%;
-    @include glassMorphBlack;
-  }
-  .others {
-    display: flex;
-    width: 100%;
-    min-height: 200px;
-    height: 20%;
-    @include glassMorphBlack;
-  }
-}
-
-.cvContent {
-  width: 100%;
-  height: 100%;
-  border: 1px solid violet;
-  display: flex;
-  flex-direction: column;
-
-  .studiesContent,
-  .proContent,
-  .othersContent {
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .othersContent {
-    li {
     }
   }
 }

@@ -24,22 +24,67 @@ export default function CV(props) {
             <div className="cvContent">
               <h2>Langages et Technos</h2>
               <div className="langContent">
-                  <div className="barchart">
-                    <h4 >PYTHON</h4>
-                    <div className="barre"></div>
-                  </div>
-                  <h4 >HTML/CSS</h4>
-                  <h4 >JAVASCRIPT</h4>
-                  <h4 >SASS</h4>
-                  <h4 >REACT</h4>
-                  <h4 >GREENSOCK</h4>
-
+                <div className="barchart">
+                  <h4>PYTHON</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (50  * 0.66%))" }}
+                  ></div>
+                </div>
+                <div className="barchart">
+                  <h4>HTML/CSS</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (90  *  0.66%) )" }}
+                  ></div>
+                </div>
+                <div className="barchart">
+                  <h4>JAVASCRIPT</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (66  * 0.66%))" }}
+                  ></div>
+                </div>
+                <div className="barchart">
+                  <h4>REACT</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (50  *  0.66%))" }}
+                  ></div>
+                </div>
+                <div className="barchart">
+                  <h4>SASS</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (85  *  0.66%))" }}
+                  ></div>
+                </div>
+                <div className="barchart">
+                  <h4>GREENSOCK</h4>
+                  <div
+                    className="barre"
+                    style={{ width: "calc( (50  *  0.66%))" }}
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
           <div className="skills">
             <div className="cvContent">
               <h2>Compétences</h2>
+              <div className="competencesContent">
+                <ul>
+                  <li>Organisation et plannification<br />mise en place rétroplanning et respect des délais</li>
+                  <li>Curieux, en apprentissage permanent<br />demandeur ou force de recherche</li>
+                  <li>Bonne réception à la critique constructive<br />remise en question quand nécessaire</li>
+                  <li>Capacité de travail en équipe, <br /> avec une  vision globale d'un projet</li>
+                  <li>Compréhension de l'UX / UI <br />face à un cahier des charges</li>
+                  <li>Réactif, force de propositions<br /> et de décisions face aux problèmes</li>
+                  <li>Communicant et positif</li>
+                  <li></li>
+                </ul>
+
+              </div>
             </div>
           </div>
         </div>

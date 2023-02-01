@@ -150,7 +150,7 @@ export const dataCours=[
     img:"../../images/informatique/git.jpg",
     top : "70%",
     left:"70%",
-    rotate:"rotate(-10deg)",
+    rotate:"rotate(15deg)",
     comp1:"Les principales commandes Git",
     comp2:"Les principales commandes Github",
     comp3:"Le travail collaboratif",
