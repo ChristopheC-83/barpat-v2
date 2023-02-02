@@ -75,6 +75,7 @@
       left: -100%;
       transition: all 0.5s;
     }
+   
 
     i {
       text-shadow: 1px 1px 2px #ffffff80;
@@ -93,14 +94,25 @@
       align-items: center;
       justify-content: space-between;
       font-size: clamp(16px, 5px + 1.2vh, 20px);
+
+      
       
     }
+    
 
    
 
     li:hover p:after {
       left: 0;
     }
+
+    .active{
+      p:after {
+        left: 0;
+      }
+    }
+
+    
 
   }
 
@@ -155,6 +167,8 @@
       font-weight: bold;
     }
   }
+
+ 
 }
 
 @import "./MQ/navbar_MQ";

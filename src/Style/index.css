@@ -803,6 +803,9 @@ a {
 .navbarContainer .navigation li:hover p:after {
   left: 0;
 }
+.navbarContainer .navigation .active p:after {
+  left: 0;
+}
 .navbarContainer .socialNetwork {
   background: #fff;
   border-radius: 15px;
