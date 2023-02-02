@@ -11,7 +11,7 @@ export default function Navigation({ active, children, onClick }) {
         {dataColor.map((link) => (
           <li key={link.id}>
             <NavLink 
-            to={link.to} 
+            to={link.to}  
             className={active ? "active liActive" : ""}
             >
               <i className={link.icone} style={{ color: `${link.color}` }}></i>
