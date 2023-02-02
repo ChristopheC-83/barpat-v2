@@ -8,6 +8,12 @@ animation CV
 "ces briques qui nous constituent..."
 Apparition des blocs..
 
+sur section dev', animation : cartes empilées s'étalent
+
+sur section sport : image scale de 0 en rotation sur Z
+
+section portfolio : les images arrivent de la gauche (juste un scale de 0 avec opacity 0 en responsive) en poussant le texte
+
 
 2023.01.20 :
 

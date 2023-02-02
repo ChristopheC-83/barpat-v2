@@ -5,6 +5,21 @@
     margin-right: 0vh;
     padding-top: 60px;
 
+    .titlePage {
+      h2 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .cvSplit {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
     .cvLeft,
     .cvRight {
       width: 100%;
@@ -56,6 +71,14 @@
 
 @media (max-width: 420px) {
   .cvContainer {
+    .titlePage {
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
     .cvLeft {
       .languages {
         .langContent {
@@ -66,10 +89,9 @@
               margin-right: 5px;
             }
             .barre::after {
-                height: 3px;
-              }
+              height: 3px;
             }
-          
+          }
         }
       }
     }
