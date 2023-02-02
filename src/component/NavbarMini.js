@@ -26,7 +26,9 @@ export default function NavbarMini({ color }) {
 
   return (
     <div className="navbarMiniContainer">
-      <div className={toggle ? "overlay" : ""} onClick={CloseAll}></div>
+      <div className={toggle ? "overlay" : ""} onClick={CloseAll}>
+        
+      </div>
       <div
         className="toggle"
         onClick={Toggle}

@@ -72,7 +72,37 @@ a {
   margin: 1vh 0;
   margin-right: 1vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+.cvContainer .titlePage {
+  background: #fff;
+  border-radius: 15px;
+  background: rgba(2, 2, 2, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  width: 100%;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.cvContainer .titlePage h2,
+.cvContainer .titlePage h3 {
+  text-align: center;
+  width: 100%;
+  color: #333;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.cvContainer .titlePage h3 {
+  font-size: 23px;
+}
+.cvContainer .cvSplit {
+  display: flex;
 }
 .cvContainer h2 {
   width: 80%;
@@ -164,7 +194,6 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background: #333;
   border-radius: 50px;
   height: 6px;
@@ -333,7 +362,7 @@ a {
     padding-top: 10px;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 420px) {
   .cvContainer .cvLeft .languages .langContent .barchart h4 {
     font-size: 14px;
     text-align: left;
