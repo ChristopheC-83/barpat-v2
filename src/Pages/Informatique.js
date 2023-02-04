@@ -49,7 +49,7 @@ export default function Informatique() {
             <br />
             Néophyte, j'ai commencé par <strong>Python</strong> sur lequel j'ai
             pu commencer à appréhender les notions de fonctions, boucles,
-            algorythmie, programmation orientée objet, architectures de
+            algorythmes, programmation orientée objet, architectures de
             projets... <br />
             <br />
             J'ai tout de même été bloqué par le manque de rendu visuel. On fait
@@ -78,9 +78,9 @@ export default function Informatique() {
             1) retapant l'intégralité du code
             <br />
             2) ajoutant des effets/tests personnalisés. <br />
-            3) tous les cours (sauf python par jonathan Roux) ont été suivis
+            3) tous les cours (sauf Python par Jonathan Roux) ont été suivis
             jusqu'au bout avec obtention du certificat. <br />
-            4) en refaisant des pages.projets personnalisés à coté. <br />
+            4) en refaisant des pages / projets personnalisés à coté. <br />
             <br />
             Je maîtrise? Je ne pense pas... ou au moins pas totalement, loin de
             là ! <br />

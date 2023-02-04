@@ -3,11 +3,30 @@ import sass from "../images/portfolio/sass.svg";
 
 export const dataPortfolio = [
   {
+    id: 5,
+    img: "../images/portfolio/siteBarpatV2.jpg",
+    title: "Seconde version de ma page perso",
+    content:
+    "Pour cette seconde version, j'ai voulu professionnaliser mon code grâce à l'expérience et les connaissances acquises. ",
+      benefices :"J'ai, ici, exploité un peu plus React. L'utilisation de 'micro bases de données' comme la liste de ces pages par exemple, et une API de Context peuvent hydrater mes pages. Le maintien et les modifications sont ainsi plus efficaces.",
+    techno: "Les technos utilisées :",
+    technoUtilisees: (
+      <div className="logo">
+        <i className="fa-brands fa-html5" style={{ color: "#ff5723" }}></i>
+        <i className="fa-brands fa-css3-alt" style={{ color: "#254bdd" }}></i>
+        <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
+        <i className="fa-brands fa-react" style={{ color: "#5ed3f3" }}></i>
+        <img src={sass} alt="logo sass"></img>
+      </div>
+    ),
+    link: "https://christophe-cuisine.fr/",
+  },
+  {
     id: 4,
     img: "../images/portfolio/siteProV2.jpg",
     title: "Seconde version de mon site Pro",
     content:
-    "Seconde version du site dédié à mon ativité professionnelle de poseur de cuisines. ",
+    "Seconde version du site dédié à mon activité professionnelle de poseur de cuisines. ",
       benefices :"Après avoir ingurgité des formations et informations React, ma première production avec cette technologie. Modularité et conception appréciée... à mon niveau !",
     techno: "Les technos utilisées :",
     technoUtilisees: (
@@ -47,7 +66,7 @@ export const dataPortfolio = [
     img: "../images/portfolio/siteProV1.jpg",
     title: "Mon site Pro, 1ère Version",
     content:
-      "Première version du site dédié à mon ativité professionnelle de poseur de cuisines. ",
+      "Première version du site dédié à mon activité professionnelle de poseur de cuisines. ",
     benefices:
       "Prise de conscience qu'un projet perso est plus formateur qu'un tuto et qu'avant de se lancer dans la création d'une simple page, on se prépare le terrain ! contenu, images, rendu visuel final...",
     techno: "Les technos utilisées :",

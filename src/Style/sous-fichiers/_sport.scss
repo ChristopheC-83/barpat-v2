@@ -50,6 +50,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 
     img {
       width: 50%;
@@ -72,6 +73,16 @@
 
     .sportText {
       margin: 10px;
+
+      p{
+      
+    text-align: center;
+    color: #333;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+      }
     }
   }
   .sportConclusion {

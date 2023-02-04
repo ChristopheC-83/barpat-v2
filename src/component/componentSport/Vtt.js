@@ -44,7 +44,7 @@ export default function Vtt() {
           <p>Alors je fais des folies !</p>
           <br />
           <br />
-          <p>Je me lance sur des épeuves dites "marathon".</p>
+          <p>Je me lance sur des épreuves dites "marathon".</p>
           <br />
           <p>
             Ici le départ du Roc Marathon... Pour ma première participation,
@@ -64,7 +64,7 @@ export default function Vtt() {
           <p>Merci qui ? Merci la SaintéLyon VTT !</p>
           <p>
             Sors ta frontale, une loupiotte de 1000 lumens au guidon et c'est
-            parti de Saint-Etienne pour ralier Lyon.
+            parti de Saint-Etienne pour rallier Lyon.
           </p>
         </div>
         <img src={stlVtt} alt="saintélyon vtt" />

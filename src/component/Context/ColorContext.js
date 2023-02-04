@@ -59,7 +59,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Mes partages",
       bgc: "#333",
       icone: "fa-solid fa-hands-holding-circle",
-      glassMorhBGC : "rgba(200, 120, 120, 0.4)"
+      glassMorhBGC : "rgba(180, 120, 120, 0.3)"
     },
     {
       id: 6,
@@ -70,7 +70,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Du Sport ?",
       bgc: "#333",
       icone: "fa-solid fa-person-biking",
-      glassMorhBGC : "rgba(120, 200, 120, 0.4)"
+      glassMorhBGC : "rgba(120, 180, 120, 0.3)"
     },
   ];
 

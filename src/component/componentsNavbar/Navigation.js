@@ -9,7 +9,7 @@ export default function Navigation({ active, children, onClick, bgc }) {
     <div className="navigation" style={{background:`${bgc}`}}>
       <ul>
         {dataColor.map((link) => (
-          <li key={link.id}>
+          <li key={link.id} style={{background:`${bgc}`}}>
             <NavLink 
             to={link.to}  
             className={active ? "active liActive" : ""}

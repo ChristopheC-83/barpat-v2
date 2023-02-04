@@ -169,7 +169,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   width: 100%;
   margin: 0;
   margin-bottom: 8px;
@@ -224,7 +224,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
 }
 .cvContainer .cvLeft .languages {
   height: 45%;
@@ -286,8 +286,8 @@ a {
   width: 0;
   -webkit-animation: line 2s ease-out forwards;
           animation: line 2s ease-out forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 @-webkit-keyframes line {
   to {
@@ -345,7 +345,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
 }
 .cvContainer .cvRight .studies {
   height: 40%;
@@ -359,7 +359,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
 }
 .cvContainer .cvRight .others {
   display: flex;
@@ -373,7 +373,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
 }
 .cvContainer .cvContent {
   width: 100%;
@@ -805,7 +805,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 30%;
 }
@@ -836,7 +836,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 50%;
 }
@@ -857,7 +857,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   padding-right: 1vh;
 }
 .navbarContainer .navigation p {
@@ -907,7 +907,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 15%;
 }
@@ -946,7 +946,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 5%;
   color: violet;
@@ -1298,6 +1298,14 @@ a {
 .sportContent .content .sportText {
   margin: 10px;
 }
+.sportContent .content .sportText p {
+  text-align: center;
+  color: #333;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 .sportContent .sportConclusion p {
   width: 90%;
   margin: 10px auto;
@@ -1338,6 +1346,9 @@ a {
     flex-direction: column;
     text-align: center;
   }
+  .sportContent .content .sportText p {
+    font-size: 25px;
+  }
   .sportContent .content:nth-child(even) {
     flex-direction: column-reverse;
   }
@@ -1371,7 +1382,7 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1472,7 +1483,7 @@ body {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.075);
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 1023px) {

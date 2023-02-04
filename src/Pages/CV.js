@@ -82,7 +82,7 @@ export default function CV(props) {
                 <div className="competencesContent">
                   <ul>
                     <li>
-                      Organisation et plannification
+                      Organisation et planification
                       <br />
                       mise en place rétroplanning et respect des délais
                     </li>
@@ -129,14 +129,14 @@ export default function CV(props) {
                     Cadre Chef de Secteur en GSB (Leroy Merlin) <br />
                     <i>Mission transverse :</i>
                     <br />
-                    <i>formateur régionnal des vendeurs.</i>
+                    <i>formateur régional des vendeurs.</i>
                   </p>
                   <p>
                     <span>2004 à 2008</span> : <br /> Responsable de Magasin en
                     distribution spécialisée
                     <br />
                     <i>
-                      Missions transerves : <br />
+                      Missions transverves : <br />
                       formateur au niveau national pour les vendeurs et futurs
                       responsables de magasins.
                       <br />
@@ -158,7 +158,7 @@ export default function CV(props) {
                 <div className="studiesContent">
                   <p>
                     <span>depuis septembre 2021</span> : Formation en
-                    autodidacte au codage et developpement Web (merci YT et
+                    autodidacte au codage et développement Web (merci YT et
                     Udemy !)
                   </p>
 
