@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import photoProfil from "../../images/navbar/photoCV.png";
 
-export default function Infos({ color }) {
+export default function Infos({ color, bgc }) {
   const photo = useRef();
 
   const animated = sessionStorage.getItem("animated");
@@ -27,7 +27,7 @@ export default function Infos({ color }) {
   }
 
   return (
-    <div className="infoPerso">
+    <div className="infoPerso" style={{background:`${bgc}`}}>
       <img
         ref={photo}
         src={photoProfil}

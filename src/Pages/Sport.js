@@ -6,11 +6,11 @@ import { dataColorContext } from "../component/Context/ColorContext";
 import Nav from "../component/Nav";
 
 export default function Sport(props) {
-  const { getColorByName } = useContext(dataColorContext);
-
+  const { getColorByName, getGlassMorhBGC } = useContext(dataColorContext);
+  let bgc = getGlassMorhBGC("sport");
+  let color = getColorByName("sport");
   const [pageSport, setPageSport] = useState("accueil");
 
-  let color = getColorByName("sport");
   return (
     <div className="container">
       <div
@@ -20,8 +20,8 @@ export default function Sport(props) {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      <Nav color={color} />
-      <div className="pageContainer sportContainer">
+      <Nav color={color} bgc={bgc} />
+      <div className="pageContainer sportContainer"  style={{background:`${bgc}`}}>
         <div className="titlePage">
           <h2>Travailler, Rester assis, Réfléchir... Oui !</h2>
           <h2> Mais s'aérer, se défouler, s'entretenir ? Oui Aussi !</h2>
@@ -39,7 +39,6 @@ export default function Sport(props) {
           <p
             onClick={() => {
               setPageSport("accueil");
-
             }}
             className={pageSport === "accueil" ? "choiceMade" : ""}
           >

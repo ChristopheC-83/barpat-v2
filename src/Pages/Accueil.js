@@ -1,22 +1,19 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { dataColorContext } from "../component/Context/ColorContext";
 import Drops from "../component/Drops";
 import Nav from "../component/Nav";
-import evo1 from "../images/evolution/evo1.png"
-import evo2 from "../images/evolution/evo2.png"
-import evo3 from "../images/evolution/evo3.png"
-import evo4 from "../images/evolution/evo4.png"
-import evo5 from "../images/evolution/evo5.png"
-import evo6 from "../images/evolution/evo6.png"
-import { gsap } from "gsap";
+import evo1 from "../images/evolution/evo1.png";
+import evo2 from "../images/evolution/evo2.png";
+import evo3 from "../images/evolution/evo3.png";
+import evo4 from "../images/evolution/evo4.png";
+import evo5 from "../images/evolution/evo5.png";
+import evo6 from "../images/evolution/evo6.png";
 
 export default function Accueil() {
-  const { getColorByName } = useContext(dataColorContext);
+  const { getColorByName, getGlassMorhBGC } = useContext(dataColorContext);
 
   let color = getColorByName("accueil");
-
-
-
+  let bgc = getGlassMorhBGC("accueil");
 
   return (
     <div className="container">
@@ -27,10 +24,13 @@ export default function Accueil() {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      <Nav color={color} />
-      <div className="pageContainer 
+      <Nav color={color} bgc={bgc} />
+      <div
+        className="pageContainer 
       accueilContainer
-      ">
+      "
+        style={{ background: `${bgc}` }}
+      >
         <div className="dropsContainer">
           <Drops />
         </div>

@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { useContext } from "react";
 import { dataColorContext } from "../Context/ColorContext";
 
-export default function SocialNetwork({ color }) {
+export default function SocialNetwork({ color, bgc }) {
   const { iconListe } = useContext(dataColorContext);
 
   const icones = useRef();
@@ -24,7 +24,7 @@ export default function SocialNetwork({ color }) {
   }, [animated]);
 
   return (
-    <div className="socialNetwork">
+    <div className="socialNetwork" style={{background:`${bgc}`}}>
       <ul ref={icones}>
         {iconListe.map((ico) => (
           <li

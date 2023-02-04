@@ -6,11 +6,13 @@ import Cours from "../component/componentInformatique/Cours";
 import InfoCours from "../component/componentInformatique/InfoCours";
 
 export default function Informatique() {
-  const { getColorByName } = useContext(dataColorContext);
+  const { getColorByName , getGlassMorhBGC} = useContext(dataColorContext);
 
   console.log(dataCours[0]);
 
   let color = getColorByName("parcours");
+  
+  let bgc = getGlassMorhBGC("parcours");
 
   const [lesson, setLesson] = useState(99);
 
@@ -22,7 +24,7 @@ export default function Informatique() {
   // console.log("name :" ,dataCours[lesson].name)
 
   return (
-    <div className="container">
+    <div className="container" >
       <div
         className="halo"
         style={{
@@ -31,8 +33,8 @@ export default function Informatique() {
         }}
       ></div>
 
-      <Nav color={color} />
-      <div className="pageContainer informatiqueContainer">
+      <Nav color={color} bgc={bgc}/>
+      <div className="pageContainer informatiqueContainer" style={{background:`${bgc}`}}>
         <div className="titlePage">
           <h2>Parce qu'il faut bien commencer quelque part !</h2>
           <h2>Les tutos/cours que j'ai assidument suivis.</h2>

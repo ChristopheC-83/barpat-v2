@@ -3,15 +3,15 @@ import Navigation from "./componentsNavbar/Navigation";
 import Signature from "./componentsNavbar/Signature";
 import SocialNetwork from "./componentsNavbar/SocialNetwork";
 
-export default function Navbar({ color }) {
+export default function Navbar({ color, bgc }) {
 
 
   return (
     <div className="navbarContainer">
-      <Infos color={color} />
-      <Navigation color={color}/>
-      <SocialNetwork color={color}/>
-      <Signature color={color}/>
+      <Infos color={color} bgc={bgc}/>
+      <Navigation color={color} bgc={bgc}/>
+      <SocialNetwork color={color} bgc={bgc}/>
+      <Signature color={color} bgc={bgc}/>
     </div>
   );
 }

@@ -6,9 +6,10 @@ import Card from "../component/componentPortFolio/Card";
 import { dataPortfolio } from "../data/dataPorfolio";
 
 export default function Portfolio(props) {
-  const { getColorByName } = useContext(dataColorContext);
+  const { getColorByName , getGlassMorhBGC} = useContext(dataColorContext);
 
   let color = getColorByName("portfolio");
+  let bgc = getGlassMorhBGC("portfolio");
   return (
     <div className="container">
       <div
@@ -18,8 +19,8 @@ export default function Portfolio(props) {
           boxShadow: `0 0 80px 100px ${color}`,
         }}
       ></div>
-      <Nav color={color} />
-      <div className="pageContainer portfolioContainer">
+      <Nav color={color} bgc={bgc}  />
+      <div className="pageContainer portfolioContainer"  style={{background:`${bgc}`}}>
         <div className="titlePage">
           <h2>Voici mes modestes et premières productions !</h2>
           <h2>Ou comment mettre en application mon apprentissage !</h2>

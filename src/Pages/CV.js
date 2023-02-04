@@ -3,9 +3,10 @@ import { dataColorContext } from "../component/Context/ColorContext";
 import Nav from "../component/Nav";
 
 export default function CV(props) {
-  const { getColorByName } = useContext(dataColorContext);
+  const { getColorByName, getGlassMorhBGC } = useContext(dataColorContext);
 
   let color = getColorByName("cv");
+  let bgc = getGlassMorhBGC("cv");
 
   return (
     <div className="container">
@@ -17,16 +18,16 @@ export default function CV(props) {
         }}
       ></div>
       {/* <div className="centre"></div> */}
-      <Nav color={color} />
+      <Nav color={color} bgc={bgc}/>
       <div className="cvContainer">
-        <div className="titlePage">
+        <div className="titlePage" style={{background:`${bgc}`}}>
           <h2>Un CV ? disons plutôt un bref résumé de mon parcours...</h2>
           <h2>Nous sommes le cumul de nos expériences ...</h2>
           <h3> (et à mon grand âge, une page ne suffit plus !)</h3>
         </div>
-        <div className="cvSplit">
+        <div className="cvSplit" >
           <div className="cvLeft">
-            <div className="languages">
+            <div className="languages"style={{background:`${bgc}`}}>
               <div className="cvContent">
                 <h2>Langages et Technos</h2>
                 <div className="langContent">
@@ -75,7 +76,7 @@ export default function CV(props) {
                 </div>
               </div>
             </div>
-            <div className="skills">
+            <div className="skills"style={{background:`${bgc}`}}>
               <div className="cvContent">
                 <h2>Compétences</h2>
                 <div className="competencesContent">
@@ -115,7 +116,7 @@ export default function CV(props) {
             </div>
           </div>
           <div className="cvRight">
-            <div className="expPro">
+            <div className="expPro"style={{background:`${bgc}`}}>
               <div className="cvContent">
                 <h2>Expériences professionnelles</h2>
                 <div className="proContent">
@@ -151,7 +152,7 @@ export default function CV(props) {
                 </div>
               </div>
             </div>
-            <div className="studies">
+            <div className="studies" style={{background:`${bgc}`}}>
               <div className="cvContent">
                 <h2>Parcours / Formations</h2>
                 <div className="studiesContent">
@@ -180,7 +181,7 @@ export default function CV(props) {
                 </div>
               </div>
             </div>
-            <div className="others">
+            <div className="others" style={{background:`${bgc}`}}>
               <div className="cvContent">
                 <h2>Centres d'intérêts</h2>
                 <div className="othersContent">

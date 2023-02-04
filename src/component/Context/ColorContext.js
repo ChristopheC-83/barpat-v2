@@ -14,6 +14,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Accueil",
       bgc: "#333",
       icone: "fa-solid fa-house",
+      glassMorhBGC : "rgba(20, 20, 120, 0.2)"
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Mon CV",
       bgc: "#333",
       icone: "fa-solid fa-file-lines",
+      glassMorhBGC : "rgba(80, 80, 80, 0.3)"
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Le Dev'",
       bgc: "#333",
       icone: "fa-solid fa-laptop-code",
+      glassMorhBGC : "rgba(100, 20, 200, 0.2)"
     },
 
     {
@@ -45,6 +48,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Portfolio",
       bgc: "#333",
       icone: "fa-solid fa-book-open-reader",
+      glassMorhBGC : "rgba(180, 180, 180, 0.4)"
     },
     {
       id: 5,
@@ -55,6 +59,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Mes partages",
       bgc: "#333",
       icone: "fa-solid fa-hands-holding-circle",
+      glassMorhBGC : "rgba(200, 120, 120, 0.4)"
     },
     {
       id: 6,
@@ -65,6 +70,7 @@ const DataColorContextProvider = (props) => {
       nameLink: "Du Sport ?",
       bgc: "#333",
       icone: "fa-solid fa-person-biking",
+      glassMorhBGC : "rgba(120, 200, 120, 0.4)"
     },
   ];
 
@@ -100,10 +106,15 @@ const DataColorContextProvider = (props) => {
     if (color) return color.color;
     else return null;
   }
+  function getGlassMorhBGC(name) {
+    const glassMorhBGC = dataColor.find((c) => c.name === name);
+    if (glassMorhBGC) return glassMorhBGC.glassMorhBGC;
+    else return null;
+  }
 
   return (
     <dataColorContext.Provider
-      value={{ dataColor, number, getColorByName, iconListe }}
+      value={{ dataColor, number, getColorByName,getGlassMorhBGC, iconListe }}
     >
       {props.children}
     </dataColorContext.Provider>
