@@ -51,18 +51,104 @@ a {
 
 .accueilContainer {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
+  justify-content: space-between;
 }
 .accueilContainer .accueilContent {
-  width: 100%;
-  min-height: 50vh;
-  border: 1px solid violet;
+  width: 96%;
+  max-width: 1620px;
+  margin: 0 auto;
   margin-top: 20px;
 }
-.accueilContainer .accueilContent h2 {
-  font-size: clamp(16px, 2.1vw, 40px);
-  color: black;
-  margin: 20px;
+.accueilContainer .accueilContent .accueilTitlePage h2 {
   text-align: center;
+  width: 88%;
+  color: #333;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: clamp(20px, 10px + 1.5vw, 40px);
+  margin: 20px auto;
+}
+
+.accueilContent2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-right: 10px;
+  width: 96%;
+  margin: 0 auto;
+}
+.accueilContent2 img {
+  opacity: 0;
+  -webkit-animation: apparition 6s linear infinite;
+          animation: apparition 6s linear infinite;
+  width: 16%;
+}
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.accueilContent2 img:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.accueilContent2 img:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.accueilContent2 img:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.accueilContent2 img:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.accueilContent2 img:nth-child(5) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.accueilContent2 img:nth-child(6) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .cvContainer {
@@ -390,15 +476,17 @@ a {
   }
 }
 .dropsContainer {
-  width: calc(100vw - 350px);
-  max-width: 1920px;
+  width: calc(98vw - 350px);
+  max-width: 1520px;
   height: calc((93vw - 320px) / 6);
   max-height: 290px;
   display: flex;
   padding: 1vw;
   align-items: center;
+  justify-content: space-evenly;
   gap: 1vw;
   margin: 1vw auto;
+  margin-right: 1vw;
 }
 .dropsContainer .drop {
   position: relative;
@@ -472,6 +560,11 @@ a {
   .dropsContainer .drop {
     width: calc((92vw - 60px) / 6);
     height: calc((92vw - 60px) / 6);
+  }
+}
+@media (max-width: 768px) {
+  .dropsContainer {
+    margin-top: 30px;
   }
 }
 @media (max-width: 425px) {

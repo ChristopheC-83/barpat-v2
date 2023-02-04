@@ -1,14 +1,16 @@
 .dropsContainer {
-  width: calc(100vw - 350px);
-  max-width: 1920px;
+  width: calc(98vw - 350px);
+  max-width: 1520px;
   height: calc((100vw - 7vw - 320px) / 6);
   max-height: 290px;
   display: flex;
   padding: 1vw;
   align-items: center;
+  justify-content: space-evenly;
   gap: 1vw;
   // background-color: #f1f1f1;
   margin: 1vw auto;
+  margin-right: 1vw;
   // border: 1px solid black;
 
   .drop {
