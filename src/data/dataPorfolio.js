@@ -19,7 +19,7 @@ export const dataPortfolio = [
         <img src={sass} alt="logo sass"></img>
       </div>
     ),
-    link: "https://christophe-cuisine.fr/",
+    link: "https://barpat.fun/",
   },
   {
     id: 4,
@@ -94,6 +94,6 @@ export const dataPortfolio = [
         <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
       </div>
     ),
-    link: "https://barpat.fun",
+    link: "http://archivev1.barpat.fun",
   },
 ];
