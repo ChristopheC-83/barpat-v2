@@ -22,7 +22,7 @@
     .etalage {
       width: 98%;
       max-width: 1350px;
-      height: clamp(450px, 150px + 17vw, 550px);
+      height: clamp(250px, 150px + 17vw, 550px);
       
       border: 3px solid black;
       border-radius: 15px;
@@ -35,8 +35,8 @@
         position: absolute;
         // top: 200px;
         // left: 200px;
-        width: clamp(100px, calc(80px + 10vw) , 250px);
-        height: clamp(60px, calc(50px + 6vw), 170px);
+        width: clamp(110px, calc(30px + 12vw) , 190px);
+        height: clamp(60px, calc(20px + 8vw), 120px);
         border: 3px solid #333;
         padding: 3px;
         border-radius: 10px;
@@ -44,6 +44,11 @@
         overflow: hidden;
         cursor: pointer;
         transform: translateX(-50%);
+
+        &:hover{
+          border: 3px solid #f1f1f1;
+          box-shadow: 0px 0px 3px 3px #f1f1f1;
+        }
       }
 
       .picto {

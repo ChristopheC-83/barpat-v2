@@ -8,7 +8,7 @@ import InfoCours from "../component/componentInformatique/InfoCours";
 export default function Informatique() {
   const { getColorByName , getGlassMorhBGC} = useContext(dataColorContext);
 
-  console.log(dataCours[0]);
+  // console.log(dataCours[0]); 
 
   let color = getColorByName("parcours");
   
@@ -20,7 +20,7 @@ export default function Informatique() {
     setLesson(elt);
   }
 
-  console.log("lesson : ", lesson);
+  // console.log("lesson : ", lesson);
   // console.log("name :" ,dataCours[lesson].name)
 
   return (
@@ -47,7 +47,7 @@ export default function Informatique() {
             être accompagné, il faut avant tout cadrer notre vision, faire des
             choix (et donc renoncer à certaines choses...). <br />
             <br />
-            Néophyte, j'ai commencé par <strong>Python</strong> sur lequel j'ai
+            Néophyte, j'ai débuté par <strong>Python</strong> sur lequel j'ai
             pu commencer à appréhender les notions de fonctions, boucles,
             algorythmes, programmation orientée objet, architectures de
             projets... <br />
@@ -64,13 +64,13 @@ export default function Informatique() {
             plus gratifiantes ! <br />
             <br />
             On attaque alors un framework/librairie, pour ma part, je me suis
-            penché sur <strong>React</strong> (et un peu Next). <br />
+            penché sur <strong>React</strong> (et un peu Next) que je trouve fantastique ! <br />
             <br />
-            Prenant alors conscience de l'intérêt de gérer des API et autres
-            bases de données, la prochaine étapes sera un pied dans le monde de{" "}
-            <strong>PHP et SQL</strong>... <br />
+            J'ai pris alors conscience de l'intérêt de gérer des API et autres
+            bases de données. Je me suis penché sur {" "}<strong>PHP et SQL</strong> qui me permettent de mettre en place des systèmes de gestion des utilisateurs (modérateurs, admin et super admin...) mais aussi de produire des sites dynamiques dans lesquels les utilisateurs peuvent agir.<br />
+          
             <br />
-            <span className="suite">A suivre !</span>
+            <span className="suite">Reste à joindre React avec php !</span>
           </p>
           <p className="intro2">
             Chaque cours a été suivi en : <br />
@@ -82,10 +82,11 @@ export default function Informatique() {
             jusqu'au bout avec obtention du certificat. <br />
             4) en refaisant des pages / projets personnalisés à coté. <br />
             <br />
-            Je maîtrise? Je ne pense pas... ou au moins pas totalement, loin de
+            Je maîtrise ? Je ne pense pas... ou au moins pas totalement, loin de
             là ! <br />
             Mais je suis familiarisé avec nombre de notions qui ne demandent
-            qu'à être mises en oeuvre pour être acquises.
+            qu'à être mises en oeuvre pour être acquises. <br /><br />
+            <span className="suite">Cliquez sur les images pour voir le contenu des cours  !</span>
           </p>
 
           <div className="etalage">

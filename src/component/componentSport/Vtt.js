@@ -48,7 +48,7 @@ export default function Vtt() {
           <br />
           <p>
             Ici le départ du Roc Marathon... Pour ma première participation,
-            j'entends 2 gars discutés : <br /> "après le 76eme, ça roule tout
+            j'entends 2 gars discuter : <br /> "après le 76 ème, ça roule tout
             seul !"
           </p>
         </div>

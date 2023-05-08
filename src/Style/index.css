@@ -82,26 +82,8 @@ a {
 }
 .accueilContent2 img {
   opacity: 0;
-  -webkit-animation: apparition 6s linear infinite;
-          animation: apparition 6s linear infinite;
+  animation: apparition 6s linear infinite;
   width: 16%;
-}
-@-webkit-keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 @keyframes apparition {
   0% {
@@ -122,33 +104,27 @@ a {
 }
 
 .accueilContent2 img:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .accueilContent2 img:nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .accueilContent2 img:nth-child(3) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .accueilContent2 img:nth-child(4) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .accueilContent2 img:nth-child(5) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .accueilContent2 img:nth-child(6) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .cvContainer {
@@ -284,15 +260,8 @@ a {
   border-radius: 50px;
   height: 6px;
   width: 0;
-  -webkit-animation: line 2s ease-out forwards;
-          animation: line 2s ease-out forwards;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-@-webkit-keyframes line {
-  to {
-    width: 100%;
-  }
+  animation: line 2s ease-out forwards;
+  animation-delay: 0.75s;
 }
 @keyframes line {
   to {
@@ -411,7 +380,7 @@ a {
     width: 100%;
   }
   .cvContainer .cvLeft,
-.cvContainer .cvRight {
+  .cvContainer .cvRight {
     width: 100%;
     height: auto;
     min-height: 0;
@@ -419,43 +388,43 @@ a {
     margin-bottom: 10px;
   }
   .cvContainer .cvLeft .languages,
-.cvContainer .cvRight .languages {
+  .cvContainer .cvRight .languages {
     height: 60vw;
   }
   .cvContainer .cvLeft .proContent,
-.cvContainer .cvRight .proContent {
+  .cvContainer .cvRight .proContent {
     padding: 10px 5px;
   }
   .cvContainer .cvLeft .proContent p,
-.cvContainer .cvRight .proContent p {
+  .cvContainer .cvRight .proContent p {
     padding-top: 10px;
   }
   .cvContainer .cvLeft .studies,
-.cvContainer .cvRight .studies {
+  .cvContainer .cvRight .studies {
     padding: 10px 5px;
   }
   .cvContainer .cvLeft .studies p,
-.cvContainer .cvRight .studies p {
+  .cvContainer .cvRight .studies p {
     padding-top: 10px;
   }
   .cvContainer .cvLeft .others,
-.cvContainer .cvRight .others {
+  .cvContainer .cvRight .others {
     padding: 10px 5px;
   }
   .cvContainer .cvLeft .others .othersContent .li,
-.cvContainer .cvRight .others .othersContent .li {
+  .cvContainer .cvRight .others .othersContent .li {
     padding-top: 10px;
   }
   .cvContainer .cvLeft .expPro,
-.cvContainer .cvRight .expPro {
+  .cvContainer .cvRight .expPro {
     min-height: auto;
   }
   .cvContainer .cvLeft .skills,
-.cvContainer .cvRight .skills {
+  .cvContainer .cvRight .skills {
     padding: 10px 5px;
   }
   .cvContainer .cvLeft .skills li,
-.cvContainer .cvRight .skills li {
+  .cvContainer .cvRight .skills li {
     padding-top: 10px;
   }
 }
@@ -621,7 +590,7 @@ a {
 .informatiqueContainer .formations .etalage {
   width: 98%;
   max-width: 1350px;
-  height: clamp(450px, 150px + 17vw, 550px);
+  height: clamp(250px, 150px + 17vw, 550px);
   border: 3px solid black;
   border-radius: 15px;
   margin: 20px auto;
@@ -631,8 +600,8 @@ a {
 }
 .informatiqueContainer .formations .etalage .cadre {
   position: absolute;
-  width: clamp(100px, 80px + 10vw, 250px);
-  height: clamp(60px, 50px + 6vw, 170px);
+  width: clamp(110px, 30px + 12vw, 190px);
+  height: clamp(60px, 20px + 8vw, 120px);
   border: 3px solid #333;
   padding: 3px;
   border-radius: 10px;
@@ -640,6 +609,10 @@ a {
   overflow: hidden;
   cursor: pointer;
   transform: translateX(-50%);
+}
+.informatiqueContainer .formations .etalage .cadre:hover {
+  border: 3px solid #f1f1f1;
+  box-shadow: 0px 0px 3px 3px #f1f1f1;
 }
 .informatiqueContainer .formations .etalage .picto {
   position: absolute;
@@ -668,15 +641,8 @@ a {
   opacity: 0.5;
   background-color: rgba(238, 238, 238, 0.6);
   z-index: 25;
-  -webkit-animation: comeOn 1.5s forwards;
-          animation: comeOn 1.5s forwards;
+  animation: comeOn 1.5s forwards;
   overflow: hidden;
-}
-@-webkit-keyframes comeOn {
-  to {
-    left: 0;
-    opacity: 1;
-  }
 }
 @keyframes comeOn {
   to {
@@ -819,7 +785,6 @@ a {
 }
 .navbarContainer .infoPerso h2 {
   margin: 0 auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(15px, 10px + 1vh, 30px);
@@ -1114,13 +1079,7 @@ a {
   width: 100vw;
   background: linear-gradient(0deg, rgb(51, 51, 51) 0%, rgb(200, 200, 200) 25%, rgb(255, 255, 255) 50%, rgb(200, 200, 200) 75%, rgb(51, 51, 51) 100%);
   z-index: 0;
-  -webkit-animation: afterRotate 8s linear infinite;
-          animation: afterRotate 8s linear infinite;
-}
-@-webkit-keyframes afterRotate {
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+  animation: afterRotate 8s linear infinite;
 }
 @keyframes afterRotate {
   to {
@@ -1278,16 +1237,8 @@ a {
   max-width: 350px;
   transform: scale(0.05) translateY(100px);
   opacity: 0.05;
-  -webkit-animation: apparitionImg 2s ease-out forwards;
-          animation: apparitionImg 2s ease-out forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-@-webkit-keyframes apparitionImg {
-  to {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
+  animation: apparitionImg 2s ease-out forwards;
+  animation-delay: 0.5s;
 }
 @keyframes apparitionImg {
   to {
@@ -1439,22 +1390,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   opacity: 0.2;
-  -webkit-animation: bgc 60s infinite ease-in-out;
-          animation: bgc 60s infinite ease-in-out;
-}
-
-@-webkit-keyframes bgc {
-  50% {
-    width: 60vw;
-    height: 60vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    width: 2vw;
-    height: 2vw;
-  }
+  animation: bgc 60s infinite ease-in-out;
 }
 
 @keyframes bgc {
