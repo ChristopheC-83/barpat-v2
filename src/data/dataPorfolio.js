@@ -3,12 +3,50 @@ import sass from "../images/portfolio/sass.svg";
 
 export const dataPortfolio = [
   {
+    id: 7,
+    img: "../images/portfolio/siteTodoList.jpg",
+    title: "Le projet obligatoire ! (faut bien y passer 😅)",
+    content:
+    "Ce site n'a pas d'objectif autre que de consolider mon apprentissage php/sql",
+    benefices :"J'aurai pu faire simple ! Une table unique pour tous les utilisateurs... mais non !!! Chacun génère sa table à l'inscription - détruite à la désinscription - et les administrateurs ont accés (lecture, modif et suppression) à toutes les infos de toutes les ToDoListes... donc toutes les tables.",
+    techno: "Les technos utilisées :",
+    technoUtilisees: (
+      <div className="logo">
+        <i className="fa-brands fa-html5" style={{ color: "#ff5723" }}></i>
+        <i className="fa-brands fa-css3-alt" style={{ color: "#254bdd" }}></i>
+        <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
+        <i className="fa-brands fa-php" style={{ color: "#4d598b" }}></i>
+        <img src={sass} alt="logo sass"></img>
+      </div>
+    ),
+    link: "https://charteposeur.christophe-cuisine.fr/",
+  },
+  {
+    id: 6,
+    img: "../images/portfolio/siteChartePoseur.jpg",
+    title: "1er site utilitaire dynamique",
+    content:
+    "Pour ce site, j'ai répondu à la demande d'un magasin qui devait faire valider certaines méthodes de travail par ses prartenaires.",
+      benefices :"A partir dune structure MVC, nous contrôlons ici les enregistrements des utilisateurs, leur statut, la mise en place d'un texte modifiable à faire valider par le lecteur.",
+    techno: "Les technos utilisées :",
+    technoUtilisees: (
+      <div className="logo">
+        <i className="fa-brands fa-html5" style={{ color: "#ff5723" }}></i>
+        <i className="fa-brands fa-css3-alt" style={{ color: "#254bdd" }}></i>
+        <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
+        <i className="fa-brands fa-php" style={{ color: "#4d598b" }}></i>
+        <img src={sass} alt="logo sass"></img>
+      </div>
+    ),
+    link: "https://charteposeur.christophe-cuisine.fr/",
+  },
+  {
     id: 5,
     img: "../images/portfolio/siteBarpatV2.jpg",
     title: "Seconde version de ma page perso",
     content:
     "Pour cette seconde version, j'ai voulu professionnaliser mon code grâce à l'expérience et les connaissances acquises. ",
-      benefices :"J'ai, ici, exploité un peu plus React. L'utilisation de 'micro bases de données' comme la liste de ces pages par exemple, et une API de Context peuvent hydrater mes pages. Le maintien et les modifications sont ainsi plus efficaces.",
+      benefices :"J'ai, ici, exploité un peu plus React. L'utilisation de 'micro bases de données' comme la liste de ces pages par exemple, et une API de Context peuvent hydrater mes pages. Le maintien et les modifications sont ainsi plus efficaces (ayant modifié ce site après mon apprentissage de php/sql, je valide la facilité des modifications!).",
     techno: "Les technos utilisées :",
     technoUtilisees: (
       <div className="logo">
