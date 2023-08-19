@@ -3,12 +3,12 @@ import sass from "../images/portfolio/sass.svg";
 
 export const dataPortfolio = [
   {
-    id: 7,
-    img: "../images/portfolio/siteTodoList.jpg",
-    title: "Le projet obligatoire ! (faut bien y passer 😅)",
+    id: 9,
+    img: "../images/portfolio/siteToBuyList.jpg",
+    title: 'Application de listes" !',
     content:
-    "Ce site n'a pas d'objectif autre que de consolider mon apprentissage php/sql",
-    benefices :"J'aurai pu faire simple ! Une table unique pour tous les utilisateurs... mais non !!! Chacun génère sa table à l'inscription - détruite à la désinscription - et les administrateurs ont accés (lecture, modif et suppression) à toutes les infos de toutes les ToDoListes... donc toutes les tables.",
+    "Application de création de listes et de partages de listes (pour les courses, les todo...)",
+    benefices :"Encore du php sur une structure MVC avec gestion des utilisateurs et une BDD un peu plus complexe. L'utilisateur peut partager ses listes avec des membres de son choix. Un système basique de messages privés a été intégré. Un panneau d'administration montre l'ensemble des membres. Un cookie de connexion permanente a été mis en place pour faciliter l'utilisation sur smartphone.",
     techno: "Les technos utilisées :",
     technoUtilisees: (
       <div className="logo">
@@ -19,7 +19,46 @@ export const dataPortfolio = [
         <img src={sass} alt="logo sass"></img>
       </div>
     ),
-    link: "https://charteposeur.christophe-cuisine.fr/",
+    link: "https://tobuylist.barpat.fun",
+  },
+  {
+    id: 8,
+    img: "../images/portfolio/siteVeloExpresso2.jpg",
+    title: 'Première commande pour un "client" !',
+    content:
+    "Site vitrine pour les visiteurs mais avec une page d'administration (pour ajouter des vélos à la vente par exemple) pour le client.",
+    benefices :"Pas de React ici, une page de login pour le propriétaire du magasin qui peut CRUD des vélos d'occasion ou neufs sur son tableau d'administration. Ces modifications sont bien évidemment visibles sur le site. Mise en place d'une page de contact avec envoi direct de mail grâce à php. Site développer sur une structure MVC.",
+    techno: "Les technos utilisées :",
+    technoUtilisees: (
+      <div className="logo">
+        <i className="fa-brands fa-html5" style={{ color: "#ff5723" }}></i>
+        <i className="fa-brands fa-css3-alt" style={{ color: "#254bdd" }}></i>
+        <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
+        <i className="fa-brands fa-php" style={{ color: "#4d598b" }}></i>
+        <img src={sass} alt="logo sass"></img>
+      </div>
+    ),
+    link: "https://velo-expresso.com/",
+  },
+  {
+    id: 7,
+    img: "../images/portfolio/siteTodoList.jpg",
+    title: "Le projet obligatoire ! (faut bien y passer 😅)",
+    content:
+    "Ce site n'a pas d'objectif autre que de consolider mon apprentissage php/sql",
+    benefices :"J'aurai pu faire simple ! Une table unique pour tous les utilisateurs... mais non !!! Chacun génère sa table à l'inscription - détruite à la désinscription - et les administrateurs ont accès (lecture, modif et suppression) à toutes les infos de toutes les ToDoListes... donc toutes les tables.",
+    techno: "Les technos utilisées :",
+    technoUtilisees: (
+      <div className="logo">
+        <i className="fa-brands fa-html5" style={{ color: "#ff5723" }}></i>
+        <i className="fa-brands fa-css3-alt" style={{ color: "#254bdd" }}></i>
+        <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
+        <i className="fa-brands fa-php" style={{ color: "#4d598b" }}></i>
+        <img src={sass} alt="logo sass"></img>
+        <img src={gsap} alt="logo greensock"></img>
+      </div>
+    ),
+    link: "https://todolist.barpat.fun/accueil/",
   },
   {
     id: 6,
@@ -55,6 +94,7 @@ export const dataPortfolio = [
         <i className="fa-brands fa-square-js" style={{ color: "#efd81d" }}></i>
         <i className="fa-brands fa-react" style={{ color: "#5ed3f3" }}></i>
         <img src={sass} alt="logo sass"></img>
+        <img src={gsap} alt="logo greensock"></img>
       </div>
     ),
     link: "https://barpat.fun/",

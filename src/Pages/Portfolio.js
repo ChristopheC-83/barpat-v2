@@ -25,7 +25,7 @@ export default function Portfolio(props) {
           <h2>Voici mes modestes et premières productions !</h2>
           <h2>Ou comment mettre en application mon apprentissage !</h2>
           <h3>
-            (Vous ne verrez pas de pages produite lors de tuto là-dedans ! Quand
+            (Vous ne verrez pas de pages produites lors de tuto là-dedans ! Quand
             même ! 😅)
           </h3>
         </div>

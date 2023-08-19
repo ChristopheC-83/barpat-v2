@@ -389,7 +389,9 @@ a {
   }
   .cvContainer .cvLeft .languages,
   .cvContainer .cvRight .languages {
-    height: 60vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 10px;
   }
   .cvContainer .cvLeft .proContent,
   .cvContainer .cvRight .proContent {
@@ -427,6 +429,15 @@ a {
   .cvContainer .cvRight .skills li {
     padding-top: 10px;
   }
+  .cvContainer .cvLeft .languages .langContent .barchart {
+    margin-top: 15px;
+  }
+  .cvContainer .cvLeft .languages .langContent .barchart .barre::after {
+    transform: translateY(-5px);
+  }
+  .cvContainer .cvLeft .languages .langContent .barchart:last-child {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 420px) {
   .cvContainer .titlePage h2 {
@@ -435,6 +446,9 @@ a {
   .cvContainer .titlePage h3 {
     font-size: 16px;
   }
+  .cvContainer .cvLeft .languages .langContent .barchart {
+    margin-top: 10px;
+  }
   .cvContainer .cvLeft .languages .langContent .barchart h4 {
     font-size: 14px;
     text-align: left;
@@ -442,6 +456,7 @@ a {
   }
   .cvContainer .cvLeft .languages .langContent .barchart .barre::after {
     height: 3px;
+    transform: translateY(-5px);
   }
 }
 .dropsContainer {

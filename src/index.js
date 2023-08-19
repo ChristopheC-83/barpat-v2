@@ -6,9 +6,9 @@ import DataColorContextProvider from "./component/Context/ColorContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <DataColorContextProvider>
     <BrowserRouter>
+  <DataColorContextProvider>
       <App />
-    </BrowserRouter>
   </DataColorContextProvider>
+    </BrowserRouter>
 );

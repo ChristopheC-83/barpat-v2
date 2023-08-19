@@ -30,6 +30,8 @@ export default function CV(props) {
             <div className="languages" style={{ background: `${bgc}` }}>
               <div className="cvContent">
                 <h2>Langages et Technos</h2>
+                <p style={{textAlign:"center"}}>(on est d'accord, ce diagramme ne veut rien dire...</p>
+                <p style={{textAlign:"center"}}>mais j'aime bien l'animation façon équalizer des années 1980... oui, je suis vieux 😅)</p>
                 <div className="langContent">
                   <div className="barchart">
                     <h4>PYTHON</h4>
